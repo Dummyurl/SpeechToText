@@ -45,6 +45,15 @@
             android:name="info.pratham.speechtotext.FormActivity"
             android:screenOrientation="portrait" />
 
+        <receiver
+            android:name="info.pratham.speechtotext.syncoperations.NetworkChangeReceiver"
+            android:label="NetworkChangeReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
         <meta-data
             android:name="android.support.VERSION"
             android:value="26.1.0" />
