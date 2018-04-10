@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Tue Apr 10 16:23:06 IST 2018
+0.baseType=DIRECTORY
+0.base=E\:\\AndroidProjects\\SpeechToText\\app\\build\\intermediates\\assets\\debug
+0.path=LanguageData.json
+0.set=ASSET
+count=1

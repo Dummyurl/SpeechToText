@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "G:\\STT\\SpeechToText(10 April PlayStore)\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw720dp-land-v13\\values-sw720dp-land-v13.xml",
+            "outputFile": "E:\\AndroidProjects\\SpeechToText\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw720dp-land-v13\\values-sw720dp-land-v13.xml",
             "map": [
                 {
-                    "source": "G:\\STT\\SpeechToText(10 April PlayStore)\\app\\src\\main\\res\\values-sw720dp-land\\strings.xml",
+                    "source": "E:\\AndroidProjects\\SpeechToText\\app\\src\\main\\res\\values-sw720dp-land\\strings.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -21,13 +21,13 @@
                     }
                 },
                 {
-                    "source": "G:\\STT\\SpeechToText(10 April PlayStore)\\app\\src\\main\\res\\values-sw720dp-land\\dimens.xml",
+                    "source": "E:\\AndroidProjects\\SpeechToText\\app\\src\\main\\res\\values-sw720dp-land\\dimens.xml",
                     "from": {
                         "startLines": "6",
                         "startColumns": "4",
-                        "startOffsets": "205",
+                        "startOffsets": "206",
                         "endColumns": "58",
-                        "endOffsets": "259"
+                        "endOffsets": "260"
                     },
                     "to": {
                         "startLines": "2",
