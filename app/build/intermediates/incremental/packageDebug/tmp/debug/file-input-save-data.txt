@@ -1,11 +1,28 @@
 #Internal package file, do not edit.
+<<<<<<< HEAD
+#Tue Apr 10 16:23:35 IST 2018
+1.base=E\:\\AndroidProjects\\SpeechToText\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
+2.path=classes.dex
+=======
 #Tue Apr 10 16:24:24 IST 2018
 1.base=G\:\\GIT_STT\\SpeechToText\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+>>>>>>> 5b18aca1a7394e93078f0f46a5993d7838cf634a
 0.baseType=DIRECTORY
+2.base=E\:\\AndroidProjects\\SpeechToText\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
+2.set=DEX
 1.baseType=DIRECTORY
+<<<<<<< HEAD
+count=3
+1.set=DEX
+0.path=LanguageData.json
+0.set=ASSET
+0.base=E\:\\AndroidProjects\\SpeechToText\\app\\build\\intermediates\\assets\\debug
+2.baseType=DIRECTORY
+=======
 count=2
 1.set=DEX
 0.path=LanguageData.json
 0.set=ASSET
 0.base=G\:\\GIT_STT\\SpeechToText\\app\\build\\intermediates\\assets\\debug
+>>>>>>> 5b18aca1a7394e93078f0f46a5993d7838cf634a
 1.path=classes.dex
