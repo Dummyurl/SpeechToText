@@ -13,7 +13,7 @@ public class myUser {
     public String Phone;
 
     public String ReordId;
-    public String UserName;
+    public String UserID;
     public String OriginalText;
     public String VoiceText;
 

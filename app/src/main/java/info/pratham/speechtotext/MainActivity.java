@@ -2,7 +2,6 @@ package info.pratham.speechtotext;
 
 import android.annotation.TargetApi;
 import android.content.Intent;
-import android.media.MediaRecorder;
 import android.os.Build;
 import android.os.Bundle;
 import android.speech.RecognitionListener;
@@ -18,8 +17,6 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import org.json.JSONArray;
 
 import java.util.ArrayList;
@@ -41,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements
     String tex = "";
     JSONArray readingData2, actualReadingData;
     static String languageSpinner, typeSpinner, engLang = "en-IN", hinLang = "gu-IN";
-    private String recName, recName2, LOG_TAG = "VoiceRecognitionActivity", uName;
+    public String recName, recName2, LOG_TAG = "VoiceRecognitionActivity", uName, uID;
     static String RecordedSpeech = "", selectedLanguage = "en-IN", selectedType = "words", mySentence = "";
     boolean voiceStart = false, stopped = false;
 
@@ -52,6 +49,7 @@ public class MainActivity extends AppCompatActivity implements
 
 
         uName = getIntent().getStringExtra("uName");
+        uID = getIntent().getStringExtra("uId");
         readingData2 = FormActivity.readingData;
         ttspeech = new MyTTS(this);
         myuser = new myUser();
@@ -319,7 +317,7 @@ public class MainActivity extends AppCompatActivity implements
         tv_mic.setText("Speak");
 
         myuser.ReordId = recName;
-        myuser.UserName = uName;
+        myuser.UserID = uID;
 
         myuser.OriginalText = String.valueOf(textToReadView.getText());
         myuser.VoiceText = tex;

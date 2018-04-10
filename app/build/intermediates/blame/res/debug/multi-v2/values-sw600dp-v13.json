@@ -1,10 +1,17 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "E:\\AndroidProjects\\SpeechToText\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\pefpr\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\1bfec166e030e4dc85c4d24a81bca226\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+=======
+            "outputFile": "G:\\GIT_STT\\SpeechToText\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Ameya\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\4ad754477f96395c6a211a86af40b411\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+>>>>>>> 5b18aca1a7394e93078f0f46a5993d7838cf634a
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -14,7 +21,11 @@
                     }
                 },
                 {
+<<<<<<< HEAD
                     "source": "E:\\AndroidProjects\\SpeechToText\\app\\src\\main\\res\\values-sw600dp\\strings.xml",
+=======
+                    "source": "G:\\GIT_STT\\SpeechToText\\app\\src\\main\\res\\values-sw600dp\\strings.xml",
+>>>>>>> 5b18aca1a7394e93078f0f46a5993d7838cf634a
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

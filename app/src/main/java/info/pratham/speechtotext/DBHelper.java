@@ -40,7 +40,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
         try {
             db.execSQL("CREATE TABLE SttUser(UserId TEXT NOT NULL, UserName text, Place text, Age text, HighestEducation text, PhoneNo text);");
-            db.execSQL("CREATE TABLE SttText(ReordId TEXT NOT NULL, UserName text, OriginalText text, VoiceText text );");
+            db.execSQL("CREATE TABLE SttText(ReordId TEXT NOT NULL, UserId text, OriginalText text, VoiceText text );");
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -55,7 +55,7 @@ public class DBHelper extends SQLiteOpenHelper {
             db.execSQL("Drop table if exists SttText");
 
             db.execSQL("CREATE TABLE SttUser(UserId TEXT NOT NULL, UserName text, Place text, Age text, HighestEducation text, PhoneNo text);");
-            db.execSQL("CREATE TABLE SttText(ReordId TEXT NOT NULL, UserName text, OriginalText text, VoiceText text );");
+            db.execSQL("CREATE TABLE SttText(ReordId TEXT NOT NULL, UserId text, OriginalText text, VoiceText text );");
 
         } catch (Exception e) {
             e.printStackTrace();

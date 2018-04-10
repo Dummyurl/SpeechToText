@@ -93,7 +93,9 @@ public class FormActivity extends AppCompatActivity{
                     myUser user = new myUser();
                     MyDBHelper myDBHelper = new MyDBHelper(FormActivity.this);
 
-                    user.Id = String.valueOf(UUID.randomUUID());
+                    String studentId = String.valueOf(UUID.randomUUID());
+
+                    user.Id = studentId;
                     user.Name = uName;
                     user.Age = uAge;
                     user.Location = uLocation;
@@ -111,7 +113,7 @@ public class FormActivity extends AppCompatActivity{
 
                     Intent intent;
                     intent = new Intent(FormActivity.this, MainActivity.class);
-                    intent.putExtra("uName", uName);
+                    intent.putExtra("uId", studentId);
                     startActivity(intent);
                 } else {
                     Toast.makeText(FormActivity.this, "Please feel all details", Toast.LENGTH_SHORT).show();
