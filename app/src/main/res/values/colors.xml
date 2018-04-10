@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fd995f</color>
+    <color name="colorPrimaryDark">#fa813b</color>
+    <color name="colorAccent">#ff404a</color>
+
+    <color name="white">#ffffff</color>
+    <color name="bg_gradient_start">#fd995f</color>
+    <color name="bg_gradient_end">#f4ed62</color>
+    <color name="rounded_corner_bg">#ff8d4b</color>
+    <color name="transparent_white">#77ffffff</color>
+    <color name="transparent_white_dark">#53ffffff</color>
+    <color name="simple_black">#1e1e1e</color>
+    <color name="blackTransparent">#9b0e0e0e</color>
+
+</resources>

@@ -1,0 +1,11 @@
+#Internal package file, do not edit.
+#Tue Apr 10 15:37:55 IST 2018
+1.base=G\:\\STT\\SpeechToText(10 April PlayStore)\\app\\build\\intermediates\\assets\\debug
+0.baseType=DIRECTORY
+1.baseType=DIRECTORY
+count=2
+1.set=ASSET
+0.path=classes.dex
+0.set=DEX
+0.base=G\:\\STT\\SpeechToText(10 April PlayStore)\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+1.path=LanguageData.json

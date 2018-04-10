@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="G:\STT\SpeechToText(10 April PlayStore)\app\src\main\assets"><file name="LanguageData.json" path="G:\STT\SpeechToText(10 April PlayStore)\app\src\main\assets\LanguageData.json"/></source><source path="G:\STT\SpeechToText(10 April PlayStore)\app\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="G:\STT\SpeechToText(10 April PlayStore)\app\src\debug\assets"/></dataSet></merger>

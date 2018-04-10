@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\PEF-2\.android\build-cache\f9d776f6caa6f28b11b918d406f5068ae15b3a26\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="6eb9107eb34d2fe2b020662b7fbbec991dcba846">
+        <dex dex="C:\Users\PEF-2\Desktop\New ERR STT\SpeechToText\app\build\intermediates\pre-dexed\debug\classes_c932e23b81a04b27351ce7507137c04e8f499bb1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\PEF-2\.android\build-cache\70de74f62b63c56ab292afcd54639e85ea982709\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="f9b41622897665678d31d78e57a361cb0cebcb0d">
+        <dex dex="C:\Users\PEF-2\Desktop\New ERR STT\SpeechToText\app\build\intermediates\pre-dexed\debug\classes_33db13bd1e8bb2d73fb36e492af3407f79e21510.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\PEF-2\.android\build-cache\615ba8543d0a0e7c53f8d944a1b99ccc7e522497\output\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="6e02e34594ebe9c0501ffda8dd48497f81b82977">
+        <dex dex="C:\Users\PEF-2\Desktop\New ERR STT\SpeechToText\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.0_23f2aa4d85863f8366496d7ffcfacc821947ed05.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\SDK\extras\android\m2repository\com\android\support\support-annotations\24.2.0\support-annotations-24.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="6be858a75633b1f0a2d24cad740db57775cb6871">
+        <dex dex="C:\Users\PEF-2\Desktop\New ERR STT\SpeechToText\app\build\intermediates\pre-dexed\debug\support-annotations-24.2.0_13af9377042d0e71ba1ffb056e85c54740d6a7ea.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\PEF-2\.android\build-cache\70de74f62b63c56ab292afcd54639e85ea982709\output\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="771b3cc0e597b54da25f8086ba73180c59c6bc71">
+        <dex dex="C:\Users\PEF-2\Desktop\New ERR STT\SpeechToText\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.0_1c229133f80f23d3895fd639203218d5e41fe986.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\PEF-2\.android\build-cache\615ba8543d0a0e7c53f8d944a1b99ccc7e522497\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="c84e216d9bf618464d6b9564d71d9a656433e7c4">
+        <dex dex="C:\Users\PEF-2\Desktop\New ERR STT\SpeechToText\app\build\intermediates\pre-dexed\debug\classes_94c76c2d88a82a3a1a3b2286c0c4ec523af6e3eb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\PEF-2\.android\build-cache\ad777ea0d15e5e2dd750568f033b13da2a8de0ac\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="f3ee23ef25c9a8fe3d40246d0b7097267963a612">
+        <dex dex="C:\Users\PEF-2\Desktop\New ERR STT\SpeechToText\app\build\intermediates\pre-dexed\debug\classes_9cce9392efcc36a0ccfb6dabaf00cd2290470e48.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\PEF-2\.android\build-cache\e0300c6bb6dfebe8485efdb511afa4e123dab47f\output\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="60d7b23621d31e6f42f4f76f16af467e57a20cda">
+        <dex dex="C:\Users\PEF-2\Desktop\New ERR STT\SpeechToText\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.0_8570069f79c642d876ee032b4964090ce13b965d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\PEF-2\.android\build-cache\277116d5eecf9bbf8fd6271b964e1249375c9076\output\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="032a4b53def5e2ceedfc2e793b126c0163cfa1dd">
+        <dex dex="C:\Users\PEF-2\Desktop\New ERR STT\SpeechToText\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.0_a30dbac3cf389a70168a5cf65a9d00c11ee9e375.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\PEF-2\.android\build-cache\ea41b38ce12a0357db94433b088b1af2cbbeccdc\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="c3c638be6e650b165ab9ae144857b64e82787fad">
+        <dex dex="C:\Users\PEF-2\Desktop\New ERR STT\SpeechToText\app\build\intermediates\pre-dexed\debug\classes_a1b95b516a29f28190edcbc5f90c0f4eb932977a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\PEF-2\.android\build-cache\ffd8138cf5aaae8ef4a6fcdb1ed34ab3f62cf196\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="beac40bcc8a320a896dd15f5109cfcaea5e1e0e3">
+        <dex dex="C:\Users\PEF-2\Desktop\New ERR STT\SpeechToText\app\build\intermediates\pre-dexed\debug\classes_4f1302889c71ab469ef0122f308d03edcd7e2c61.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\PEF-2\.android\build-cache\f9d776f6caa6f28b11b918d406f5068ae15b3a26\output\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="045be695d968dd707691cc55d23746dbf8cf569a">
+        <dex dex="C:\Users\PEF-2\Desktop\New ERR STT\SpeechToText\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.0_a0a1bb69b004b67ac57166c406960f77952994cd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\PEF-2\.android\build-cache\f5c4af453fc6c6c65b714894388df84ea1f2a787\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="45f5eda279825ff470e3f51019d374d1ef61e000">
+        <dex dex="C:\Users\PEF-2\Desktop\New ERR STT\SpeechToText\app\build\intermediates\pre-dexed\debug\classes_8418bdc5a0aeabbcdbb4ef7f1ac08f7feebaa97e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\PEF-2\.android\build-cache\277116d5eecf9bbf8fd6271b964e1249375c9076\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d8bd2268fdcbfd52c76ade65d9900cd8def93a44">
+        <dex dex="C:\Users\PEF-2\Desktop\New ERR STT\SpeechToText\app\build\intermediates\pre-dexed\debug\classes_f2f451ad1d7312cd901ebc71d6f80431a022869f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\PEF-2\.android\build-cache\e0300c6bb6dfebe8485efdb511afa4e123dab47f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="fcc945a86ebcbf527429acb8216ec7dae2c06417">
+        <dex dex="C:\Users\PEF-2\Desktop\New ERR STT\SpeechToText\app\build\intermediates\pre-dexed\debug\classes_3eb4ec64b0ebb2bb691d97f10378123ced52b2ad.jar" />
+    </item>
+
+</items>
