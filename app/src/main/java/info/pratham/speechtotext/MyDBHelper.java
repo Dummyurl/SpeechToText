@@ -3,7 +3,7 @@ package info.pratham.speechtotext;
 import android.content.Context;
 
 /**
- * Created by Ameya on 24-Oct-17.
+ * Created by Ketan on 24-Oct-17.
  */
 
 public class MyDBHelper extends DBHelper {
@@ -75,7 +75,7 @@ public class MyDBHelper extends DBHelper {
 
     private void AddTextContentValues(myUser myuser) {
         contentValues.put("ReordId", myuser.ReordId);
-        contentValues.put("UserName", myuser.UserName);
+        contentValues.put("UserId", myuser.UserID);
         contentValues.put("OriginalText", myuser.OriginalText);
         contentValues.put("VoiceText", myuser.VoiceText);
     }

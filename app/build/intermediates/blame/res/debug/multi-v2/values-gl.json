@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "G:\\STT\\SpeechToText(10 April PlayStore)\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-gl\\values-gl.xml",
+            "outputFile": "G:\\GIT_STT\\SpeechToText\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-gl\\values-gl.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Ameya\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\4ad754477f96395c6a211a86af40b411\\res\\values-gl\\values-gl.xml",

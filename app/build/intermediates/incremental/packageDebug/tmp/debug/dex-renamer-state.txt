@@ -1,4 +1,4 @@
-#Tue Apr 10 15:37:55 IST 2018
-base.0=G\:\\STT\\SpeechToText(10 April PlayStore)\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+#Tue Apr 10 16:24:23 IST 2018
+base.0=G\:\\GIT_STT\\SpeechToText\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex
