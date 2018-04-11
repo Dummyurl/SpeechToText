@@ -1,7 +1,11 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "G:\\GIT_STT\\SpeechToText\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
+=======
+            "outputFile": "E:\\AndroidProjects\\SpeechToText\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
+>>>>>>> 5ceb35dc57488dc2be779b5d7fc31a13ba0728cd
             "map": [
                 {
                     "source": "C:\\Users\\Ameya\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\125f3cd911e212a0325c5074d5cbd711\\res\\values-v21\\values-v21.xml",

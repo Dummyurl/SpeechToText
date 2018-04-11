@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <merger version="3"><dataSet config="main"><source path="G:\GIT_STT\SpeechToText\app\src\main\assets"><file name="LanguageData.json" path="G:\GIT_STT\SpeechToText\app\src\main\assets\LanguageData.json"/></source><source path="G:\GIT_STT\SpeechToText\app\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="G:\GIT_STT\SpeechToText\app\src\debug\assets"/></dataSet></merger>
+=======
+<merger version="3"><dataSet config="main"><source path="E:\AndroidProjects\SpeechToText\app\src\main\assets"><file name="LanguageData.json" path="E:\AndroidProjects\SpeechToText\app\src\main\assets\LanguageData.json"/></source><source path="E:\AndroidProjects\SpeechToText\app\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="E:\AndroidProjects\SpeechToText\app\src\debug\assets"/></dataSet></merger>
+>>>>>>> 5ceb35dc57488dc2be779b5d7fc31a13ba0728cd
