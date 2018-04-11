@@ -1,6 +1,10 @@
 package info.pratham.speechtotext;
 
 import android.content.Context;
+import android.database.Cursor;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Ketan on 24-Oct-17.
@@ -32,6 +36,75 @@ public class MyDBHelper extends DBHelper {
         } catch (Exception ex) {
             ex.printStackTrace();
             return false;
+        }
+    }
+
+    public List<myUser> getAllUserData() {
+        try {
+            Cursor cursor = database.rawQuery("select * from " + USERTABLE + "", null);
+            return _PopulateListFromCursor(cursor);
+        } catch (Exception ex) {
+            return null;
+        }
+    }
+
+    public List<myUser> getAllSttData() {
+        try {
+            Cursor cursor = database.rawQuery("select * from " + TEXTTABLE+ "", null);
+            return _PopulateListFromCursor2(cursor);
+        } catch (Exception ex) {
+            return null;
+        }
+    }
+
+    private List<myUser> _PopulateListFromCursor2(Cursor cursor) {
+        try {
+            List<myUser> scoreList = new ArrayList<myUser>();
+            myUser myUser;
+            cursor.moveToFirst();
+
+            while (cursor.isAfterLast() == false) {
+
+                myUser = new myUser();
+
+                myUser.setReordId(cursor.getString(cursor.getColumnIndex("ReordId")));
+                myUser.setUserID(cursor.getString(cursor.getColumnIndex("UserID")));
+                myUser.setOriginalText(cursor.getString(cursor.getColumnIndex("OriginalText")));
+                myUser.setVoiceText(cursor.getString(cursor.getColumnIndex("VoiceText")));
+                scoreList.add(myUser);
+                cursor.moveToNext();
+            }
+            cursor.close();
+            database.close();
+            return scoreList;
+        } catch (Exception ex) {
+            return null;
+        }
+    }
+
+    private List<myUser> _PopulateListFromCursor(Cursor cursor) {
+        try {
+            List<myUser> scoreList = new ArrayList<myUser>();
+            myUser myUser;
+            cursor.moveToFirst();
+
+            while (cursor.isAfterLast() == false) {
+                myUser = new myUser();
+                myUser.setId(cursor.getString(cursor.getColumnIndex("UserId")));
+                myUser.setName(cursor.getString(cursor.getColumnIndex("Name")));
+                myUser.setAge(cursor.getString(cursor.getColumnIndex("Age")));
+                myUser.setLocation(cursor.getString(cursor.getColumnIndex("Location")));
+                myUser.setEducation(cursor.getString(cursor.getColumnIndex("Education")));
+                myUser.setPhone(cursor.getString(cursor.getColumnIndex("Phone")));
+
+                scoreList.add(myUser);
+                cursor.moveToNext();
+            }
+            cursor.close();
+            database.close();
+            return scoreList;
+        } catch (Exception ex) {
+            return null;
         }
     }
 

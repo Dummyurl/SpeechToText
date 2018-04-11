@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-#Tue Apr 10 16:23:35 IST 2018
-base.0=E\:\\AndroidProjects\\SpeechToText\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
-path.1=classes.dex
-renamed.1=classes2.dex
-=======
-#Tue Apr 10 16:24:23 IST 2018
+#Tue Apr 10 18:01:25 IST 2018
 base.0=G\:\\GIT_STT\\SpeechToText\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
->>>>>>> 5b18aca1a7394e93078f0f46a5993d7838cf634a
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=E\:\\AndroidProjects\\SpeechToText\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12

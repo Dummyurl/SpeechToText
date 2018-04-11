@@ -1,17 +1,10 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
-            "outputFile": "E:\\AndroidProjects\\SpeechToText\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw720dp-land-v13\\values-sw720dp-land-v13.xml",
-            "map": [
-                {
-                    "source": "E:\\AndroidProjects\\SpeechToText\\app\\src\\main\\res\\values-sw720dp-land\\strings.xml",
-=======
             "outputFile": "G:\\GIT_STT\\SpeechToText\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw720dp-land-v13\\values-sw720dp-land-v13.xml",
             "map": [
                 {
                     "source": "G:\\GIT_STT\\SpeechToText\\app\\src\\main\\res\\values-sw720dp-land\\strings.xml",
->>>>>>> 5b18aca1a7394e93078f0f46a5993d7838cf634a
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -28,17 +21,13 @@
                     }
                 },
                 {
-<<<<<<< HEAD
-                    "source": "E:\\AndroidProjects\\SpeechToText\\app\\src\\main\\res\\values-sw720dp-land\\dimens.xml",
-=======
                     "source": "G:\\GIT_STT\\SpeechToText\\app\\src\\main\\res\\values-sw720dp-land\\dimens.xml",
->>>>>>> 5b18aca1a7394e93078f0f46a5993d7838cf634a
                     "from": {
                         "startLines": "6",
                         "startColumns": "4",
-                        "startOffsets": "206",
+                        "startOffsets": "205",
                         "endColumns": "58",
-                        "endOffsets": "260"
+                        "endOffsets": "259"
                     },
                     "to": {
                         "startLines": "2",
