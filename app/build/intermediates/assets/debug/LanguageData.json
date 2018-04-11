@@ -1117,6 +1117,148 @@
           "data":"The market is very far away."
         }
       ]
+    },
+    {
+      "language":"English",
+      "words":[
+        {
+          "data":"hand"
+        },
+        {
+          "data":"star"
+        },
+        {
+          "data":"bus"
+        },
+        {
+          "data":"cat"
+        },
+        {
+          "data":"book"
+        },
+        {
+          "data":"foot"
+        },
+        {
+          "data":"fan"
+        },
+        {
+          "data":"crow"
+        },
+        {
+          "data":"girl"
+        },
+        {
+          "data":"ring"
+        },
+        {
+          "data":"clap"
+        },
+        {
+          "data":"king"
+        },
+        {
+          "data":"root"
+        },
+        {
+          "data":"bold"
+        },
+        {
+          "data":"old"
+        },
+        {
+          "data":"doll"
+        },
+        {
+          "data":"cup"
+        },
+        {
+          "data":"wish"
+        },
+        {
+          "data":"key"
+        },
+        {
+          "data":"rope"
+        },
+        {
+          "data":"house"
+        },
+        {
+          "data":"garden"
+        },
+        {
+          "data":"bag"
+        },
+        {
+          "data":"morning"
+        },
+        {
+          "data":"monkey"
+        },
+        {
+          "data":"children"
+        },
+        {
+          "data":"trees"
+        },
+        {
+          "data":"jump"
+        },
+        {
+          "data":"market"
+        },
+        {
+          "data":"cool"
+        }
+      ],
+      "sentences":[
+        {
+          "data":"This is a house."
+        },
+        {
+          "data":"Ravi is a boy."
+        },
+        {
+          "data":"Salma is a little girl."
+        },
+        {
+          "data":"There was a big tree in the garden."
+        },
+        {
+          "data":"Rani has a bag and a book."
+        },
+        {
+          "data":"Gita read it every morning on her way to school."
+        },
+        {
+          "data":"Many children joined Asif and they all started playing."
+        },
+        {
+          "data":"I go to school by bus."
+        },
+        {
+          "data":"There is a hill in front of my house."
+        },
+        {
+          "data":"The bus stops at my village."
+        },
+        {
+          "data":"This is a big monkey."
+        },
+        {
+          "data":"It was a rainy day."
+        },
+        {
+          "data":"Amar goes to the market."
+        },
+        {
+          "data":"The sky was full of clouds."
+        },
+        {
+          "data":"The market is very far away."
+        }
+      ]
     }
   ]
 }

@@ -3,14 +3,21 @@ package info.pratham.speechtotext;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
+import android.widget.Button;
 
 public class SplashScreen extends ActivityManagePermission implements PermissionResult {
+
     Handler handler;
+    Button btn_start;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
         handler = new Handler();
+
+        btn_start = (Button) findViewById(R.id.btn_start);
 
         String[] permissionArray = new String[]{PermissionUtils.Manifest_READ_EXTERNAL_STORAGE,
                 PermissionUtils.Manifest_WRITE_EXTERNAL_STORAGE,
@@ -18,36 +25,28 @@ public class SplashScreen extends ActivityManagePermission implements Permission
 
         if (!isPermissionsGranted(SplashScreen.this, permissionArray)) {
             askCompactPermissions(permissionArray, this);
-        }else{
-            handler.postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    Intent intent = new Intent(SplashScreen.this, FormActivity.class);
-                    startActivity(intent);
-                }
-            }, 2000);
         }
-    }
 
-    @Override
-    public void permissionGranted() {
-        handler.postDelayed(new Runnable() {
+        btn_start.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void run() {
-                Intent intent = new Intent(SplashScreen.this, FormActivity.class);
-                startActivity(intent);
+            public void onClick(View v) {
+                gotoNext();
             }
-        }, 2000);
+        });
+    }
 
+    public void gotoNext() {
+        Intent intent = new Intent(SplashScreen.this, FormActivity.class);
+        startActivity(intent);
     }
 
     @Override
-    public void permissionDenied() {
-
-    }
+    public void permissionGranted() { }
 
     @Override
-    public void permissionForeverDenied() {
+    public void permissionDenied() { }
 
-    }
+    @Override
+    public void permissionForeverDenied() { }
+
 }

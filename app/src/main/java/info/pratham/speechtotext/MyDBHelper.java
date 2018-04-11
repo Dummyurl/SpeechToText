@@ -1,7 +1,9 @@
 package info.pratham.speechtotext;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,20 +17,21 @@ public class MyDBHelper extends DBHelper {
     Context context;
     String USERTABLE = "SttUser";
     String TEXTTABLE = "SttText";
+    public SQLiteDatabase db;
+    public ContentValues contentValues;
 
     public MyDBHelper(Context context) {
         super(context);
         this.context = context;
-        database = this.getWritableDatabase();
     }
 
 
-    public boolean AddUser(myUser myuser) {
+    public boolean AddUser(MyUser myuser) {
         try {
-            database = this.getWritableDatabase();
+            db = this.getWritableDatabase();
             PopulateContentValues(myuser);
-            long resultCount = database.insert(USERTABLE, null, contentValues);
-            database.close();
+            long resultCount = db.insert(USERTABLE, null, contentValues);
+            db.close();
             if (resultCount == -1)
                 return false;
             else
@@ -39,80 +42,88 @@ public class MyDBHelper extends DBHelper {
         }
     }
 
-    public List<myUser> getAllUserData() {
+    public List<MyUser> getAllUserData() {
         try {
-            Cursor cursor = database.rawQuery("select * from " + USERTABLE + "", null);
+            db = this.getReadableDatabase();
+            Cursor cursor = db.rawQuery("select * from " + USERTABLE+";", null);
             return _PopulateListFromCursor(cursor);
         } catch (Exception ex) {
+            ex.printStackTrace();
             return null;
         }
     }
 
-    public List<myUser> getAllSttData() {
+    public List<SttData> getAllSttData() {
         try {
-            Cursor cursor = database.rawQuery("select * from " + TEXTTABLE+ "", null);
+            db = this.getWritableDatabase();
+            Cursor cursor = db.rawQuery("select * from " + TEXTTABLE, null);
             return _PopulateListFromCursor2(cursor);
         } catch (Exception ex) {
+            ex.printStackTrace();
             return null;
         }
     }
 
-    private List<myUser> _PopulateListFromCursor2(Cursor cursor) {
+    private List<SttData> _PopulateListFromCursor2(Cursor cursor) {
         try {
-            List<myUser> scoreList = new ArrayList<myUser>();
-            myUser myUser;
+            List<SttData> sttList = new ArrayList<>();
+            SttData sttData;
             cursor.moveToFirst();
 
-            while (cursor.isAfterLast() == false) {
+            while (!cursor.isAfterLast()) {
 
-                myUser = new myUser();
+                sttData = new SttData();
 
-                myUser.setReordId(cursor.getString(cursor.getColumnIndex("ReordId")));
-                myUser.setUserID(cursor.getString(cursor.getColumnIndex("UserID")));
-                myUser.setOriginalText(cursor.getString(cursor.getColumnIndex("OriginalText")));
-                myUser.setVoiceText(cursor.getString(cursor.getColumnIndex("VoiceText")));
-                scoreList.add(myUser);
+                sttData.setReordId(cursor.getString(cursor.getColumnIndex("ReordId")));
+                sttData.setUserID(cursor.getString(cursor.getColumnIndex("UserId")));
+                sttData.setOriginalText(cursor.getString(cursor.getColumnIndex("OriginalText")));
+                sttData.setVoiceText(cursor.getString(cursor.getColumnIndex("VoiceText")));
+                sttData.setDateTime(cursor.getString(cursor.getColumnIndex("DateTime")));
+                sttList.add(sttData);
                 cursor.moveToNext();
             }
             cursor.close();
-            database.close();
-            return scoreList;
+            db.close();
+            return sttList;
         } catch (Exception ex) {
+            ex.printStackTrace();
             return null;
         }
     }
 
-    private List<myUser> _PopulateListFromCursor(Cursor cursor) {
+    private List<MyUser> _PopulateListFromCursor(Cursor cursor) {
         try {
-            List<myUser> scoreList = new ArrayList<myUser>();
-            myUser myUser;
+            List<MyUser> userList = new ArrayList<>();
+            MyUser myUser;
             cursor.moveToFirst();
 
             while (cursor.isAfterLast() == false) {
-                myUser = new myUser();
+                myUser = new MyUser();
                 myUser.setId(cursor.getString(cursor.getColumnIndex("UserId")));
-                myUser.setName(cursor.getString(cursor.getColumnIndex("Name")));
+                myUser.setName(cursor.getString(cursor.getColumnIndex("UserName")));
                 myUser.setAge(cursor.getString(cursor.getColumnIndex("Age")));
-                myUser.setLocation(cursor.getString(cursor.getColumnIndex("Location")));
-                myUser.setEducation(cursor.getString(cursor.getColumnIndex("Education")));
-                myUser.setPhone(cursor.getString(cursor.getColumnIndex("Phone")));
+                myUser.setLocation(cursor.getString(cursor.getColumnIndex("Place")));
+                myUser.setEducation(cursor.getString(cursor.getColumnIndex("HighestEducation")));
+                myUser.setPhone(cursor.getString(cursor.getColumnIndex("PhoneNo")));
+                myUser.setDate(cursor.getString(cursor.getColumnIndex("DateTime")));
 
-                scoreList.add(myUser);
+                userList.add(myUser);
                 cursor.moveToNext();
             }
             cursor.close();
-            database.close();
-            return scoreList;
+            db.close();
+            return userList;
         } catch (Exception ex) {
+            ex.printStackTrace();
             return null;
         }
     }
 
     public boolean deleteAllEntries() {
         try {
-            database = this.getWritableDatabase();
-            database.execSQL("delete from "+ USERTABLE);
-            database.execSQL("delete from "+ TEXTTABLE);
+            db = this.getWritableDatabase();
+            db.execSQL("delete from "+ USERTABLE);
+            db.execSQL("delete from "+ TEXTTABLE);
             return true;
         } catch (Exception ex) {
             ex.printStackTrace();
@@ -120,22 +131,24 @@ public class MyDBHelper extends DBHelper {
         }
     }
 
-    private void PopulateContentValues(myUser myuser) {
+    private void PopulateContentValues(MyUser myuser) {
+        contentValues = new ContentValues();
         contentValues.put("UserId", myuser.Id.toString());
         contentValues.put("UserName", myuser.Name);
         contentValues.put("Place", myuser.Location);
         contentValues.put("Age", myuser.Age);
         contentValues.put("HighestEducation", myuser.Education);
         contentValues.put("PhoneNo", myuser.Phone);
+        contentValues.put("DateTime", myuser.Date);
     }
 
 
-    public boolean AddSttText(myUser myuser) {
+    public boolean AddSttText(SttData sttData) {
         try {
-            database = this.getWritableDatabase();
-            AddTextContentValues(myuser);
-            long resultCount = database.insert(TEXTTABLE, null, contentValues);
-            database.close();
+            db = this.getWritableDatabase();
+            AddTextContentValues(sttData);
+            long resultCount = db.insert(TEXTTABLE, null, contentValues);
+            db.close();
             if (resultCount == -1)
                 return false;
             else
@@ -146,11 +159,14 @@ public class MyDBHelper extends DBHelper {
         }
     }
 
-    private void AddTextContentValues(myUser myuser) {
-        contentValues.put("ReordId", myuser.ReordId);
-        contentValues.put("UserId", myuser.UserID);
-        contentValues.put("OriginalText", myuser.OriginalText);
-        contentValues.put("VoiceText", myuser.VoiceText);
+    private void AddTextContentValues(SttData sttData) {
+        contentValues = new ContentValues();
+
+        contentValues.put("ReordId", sttData.ReordId);
+        contentValues.put("UserId", sttData.UserID);
+        contentValues.put("OriginalText", sttData.OriginalText);
+        contentValues.put("VoiceText", sttData.VoiceText);
+        contentValues.put("DateTime", sttData.DateTime);
     }
 
 }

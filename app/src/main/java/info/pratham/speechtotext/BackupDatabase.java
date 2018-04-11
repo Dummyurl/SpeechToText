@@ -18,7 +18,7 @@ public class BackupDatabase {
         try {
 
 
-            File sd = new File(Environment.getExternalStorageDirectory().toString() + "/.PrathamSTT/STTContent/");//Environment.getExternalStorageDirectory();
+            File sd = new File(Environment.getExternalStorageDirectory().toString() + "/.PrathamSTT/");//Environment.getExternalStorageDirectory();
             File data = Environment.getDataDirectory();
 
             String currentDBPath = "//data//info.pratham.speechtotext//databases//" + "PrathamSTTDB.db";

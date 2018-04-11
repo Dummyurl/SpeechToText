@@ -23,6 +23,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
+import static info.pratham.speechtotext.FormActivity.getCurrentDateTime;
+
 public class MainActivity extends AppCompatActivity implements
         RecognitionListener {
 
@@ -32,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements
     private Spinner language_sp, type_sp;
     public MyTTS ttspeech;
     LinearLayout ll_Hear;
-    myUser myuser;
+    SttData sttData;
     Intent intent;
     MyDBHelper myDBHelper;
     String tex = "";
@@ -52,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements
         uID = getIntent().getStringExtra("uId");
         readingData2 = FormActivity.readingData;
         ttspeech = new MyTTS(this);
-        myuser = new myUser();
+        sttData = new SttData();
         myDBHelper = new MyDBHelper(this);
 
         speech = SpeechRecognizer.createSpeechRecognizer(this);
@@ -78,7 +80,7 @@ public class MainActivity extends AppCompatActivity implements
                 String datasTyp = parent.getItemAtPosition(position).toString();
                 if(datasTyp.equalsIgnoreCase("words"))
                     typeSpinner = "words";
-                else
+                else if(datasTyp.equalsIgnoreCase("sentences"))
                     typeSpinner = "sentences";
 
                 getReadingData();
@@ -316,13 +318,13 @@ public class MainActivity extends AppCompatActivity implements
         voiceStart = false;
         tv_mic.setText("Speak");
 
-        myuser.ReordId = recName;
-        myuser.UserID = uID;
+        sttData.ReordId = recName;
+        sttData.UserID = uID;
+        sttData.OriginalText = String.valueOf(textToReadView.getText());
+        sttData.VoiceText = tex;
+        sttData.DateTime= ""+getCurrentDateTime();
 
-        myuser.OriginalText = String.valueOf(textToReadView.getText());
-        myuser.VoiceText = tex;
-
-        myDBHelper.AddSttText(myuser);
+        myDBHelper.AddSttText(sttData);
 
         BackupDatabase.backup(MainActivity.this);
 
