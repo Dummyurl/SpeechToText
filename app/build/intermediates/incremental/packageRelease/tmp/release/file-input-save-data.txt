@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Apr 12 16:52:19 IST 2018
+#Thu Apr 12 17:51:01 IST 2018
 1.base=G\:\\GIT_STT\\SpeechToText\\app\\build\\intermediates\\assets\\release
 0.baseType=DIRECTORY
 1.baseType=DIRECTORY
