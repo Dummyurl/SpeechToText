@@ -1,0 +1,224 @@
+-- Merging decision tree log ---
+manifest
+ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:2:1-59:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\6c7a2548d61557e67a9036b689250df5\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\4ad754477f96395c6a211a86af40b411\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\2800609a85278775244238dc6f74dba3\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\ebf132c2022f7bef85b6739e2c5a0c36\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\1689986ad20b320211f67f1ba4644110\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\d1356adbe2730913014a99e8cdd4c779\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\b745d607ff06b9d8e64545751ef53154\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\1f685bd8d1ebc59b45e31257a551eb75\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\104fb8947ee93a311a689557efae9169\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\125f3cd911e212a0325c5074d5cbd711\AndroidManifest.xml:17:1-31:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\0c1cd544f1e833c11d3911b4a0185b64\AndroidManifest.xml:17:1-30:12
+INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:2:1-59:12
+	package
+		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:3:5-40
+		INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml
+		INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml
+		INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml
+		INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml
+uses-sdk
+ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\6c7a2548d61557e67a9036b689250df5\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\6c7a2548d61557e67a9036b689250df5\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\4ad754477f96395c6a211a86af40b411\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\4ad754477f96395c6a211a86af40b411\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\2800609a85278775244238dc6f74dba3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\2800609a85278775244238dc6f74dba3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\ebf132c2022f7bef85b6739e2c5a0c36\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\ebf132c2022f7bef85b6739e2c5a0c36\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\1689986ad20b320211f67f1ba4644110\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\1689986ad20b320211f67f1ba4644110\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\d1356adbe2730913014a99e8cdd4c779\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\d1356adbe2730913014a99e8cdd4c779\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\b745d607ff06b9d8e64545751ef53154\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\b745d607ff06b9d8e64545751ef53154\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\1f685bd8d1ebc59b45e31257a551eb75\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\1f685bd8d1ebc59b45e31257a551eb75\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\104fb8947ee93a311a689557efae9169\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\104fb8947ee93a311a689557efae9169\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\125f3cd911e212a0325c5074d5cbd711\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\125f3cd911e212a0325c5074d5cbd711\AndroidManifest.xml:21:5-23:58
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\0c1cd544f1e833c11d3911b4a0185b64\AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\0c1cd544f1e833c11d3911b4a0185b64\AndroidManifest.xml:20:5-22:41
+INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:7:5-9:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\4ad754477f96395c6a211a86af40b411\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:9:9-38
+		INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml
+		INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:8:9-35
+		INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml
+		INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:11:22-76
+uses-permission#android.permission.WRITE_INTERNAL_STORAGE
+ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:12:5-81
+	android:name
+		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:12:22-78
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:13:5-81
+	android:name
+		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:13:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:14:5-80
+	android:name
+		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:14:22-77
+uses-permission#android.permission.ACCESS_EXTERNAL_STORAGE
+ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:15:5-82
+	android:name
+		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:15:22-79
+uses-permission#android.permission.READ_INTERNAL_STORAGE
+ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:16:5-80
+	android:name
+		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:16:22-77
+uses-permission#android.permission.ACCESS_INTERNAL_STORAGE
+ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:17:5-82
+	android:name
+		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:17:22-79
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:18:5-71
+	android:name
+		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:18:22-68
+uses-permission#android.permission.INTERNET
+ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:19:5-67
+	android:name
+		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:19:22-64
+uses-permission#android.permission.STORAGE
+ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:20:5-66
+	android:name
+		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:20:22-63
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:21:5-75
+	android:name
+		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:21:22-72
+application
+ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:23:5-57:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\6c7a2548d61557e67a9036b689250df5\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\6c7a2548d61557e67a9036b689250df5\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\4ad754477f96395c6a211a86af40b411\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\4ad754477f96395c6a211a86af40b411\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\2800609a85278775244238dc6f74dba3\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\2800609a85278775244238dc6f74dba3\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\ebf132c2022f7bef85b6739e2c5a0c36\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\ebf132c2022f7bef85b6739e2c5a0c36\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\1689986ad20b320211f67f1ba4644110\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\1689986ad20b320211f67f1ba4644110\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\d1356adbe2730913014a99e8cdd4c779\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\d1356adbe2730913014a99e8cdd4c779\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\b745d607ff06b9d8e64545751ef53154\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\b745d607ff06b9d8e64545751ef53154\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\1f685bd8d1ebc59b45e31257a551eb75\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\1f685bd8d1ebc59b45e31257a551eb75\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\104fb8947ee93a311a689557efae9169\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\104fb8947ee93a311a689557efae9169\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\125f3cd911e212a0325c5074d5cbd711\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\125f3cd911e212a0325c5074d5cbd711\AndroidManifest.xml:25:5-29:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\0c1cd544f1e833c11d3911b4a0185b64\AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\0c1cd544f1e833c11d3911b4a0185b64\AndroidManifest.xml:24:5-28:19
+	android:label
+		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:26:9-41
+	android:protectionLevel
+		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:27:9-41
+	android:icon
+		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:25:9-43
+	android:allowBackup
+		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:24:9-35
+	android:theme
+		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:28:9-40
+activity#info.pratham.speechtotext.SplashScreen
+ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:29:9-38:20
+	android:screenOrientation
+		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:32:13-49
+	android:label
+		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:31:13-45
+	android:name
+		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:30:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:33:13-37:29
+action#android.intent.action.MAIN
+ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:34:17-69
+	android:name
+		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:34:25-66
+category#android.intent.category.LAUNCHER
+ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:36:17-77
+	android:name
+		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:36:27-74
+activity#info.pratham.speechtotext.MainActivity
+ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:40:9-42:52
+	android:screenOrientation
+		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:42:13-49
+	android:name
+		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:41:13-41
+activity#info.pratham.speechtotext.FormActivity
+ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:44:9-46:51
+	android:screenOrientation
+		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:46:13-49
+	android:name
+		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:45:13-41
+receiver#info.pratham.speechtotext.syncoperations.NetworkChangeReceiver
+ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:48:9-55:20
+	android:label
+		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:50:13-50
+	android:name
+		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:49:13-90
+intent-filter#action:name:android.net.conn.CONNECTIVITY_CHANGE+action:name:android.net.wifi.WIFI_STATE_CHANGED
+ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:51:13-54:29
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:52:17-79
+	android:name
+		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:52:25-76
+action#android.net.wifi.WIFI_STATE_CHANGED
+ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:53:17-78
+	android:name
+		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:53:25-75
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\4ad754477f96395c6a211a86af40b411\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\2800609a85278775244238dc6f74dba3\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\2800609a85278775244238dc6f74dba3\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\ebf132c2022f7bef85b6739e2c5a0c36\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\ebf132c2022f7bef85b6739e2c5a0c36\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\1689986ad20b320211f67f1ba4644110\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\1689986ad20b320211f67f1ba4644110\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\d1356adbe2730913014a99e8cdd4c779\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\d1356adbe2730913014a99e8cdd4c779\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\b745d607ff06b9d8e64545751ef53154\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\b745d607ff06b9d8e64545751ef53154\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\1f685bd8d1ebc59b45e31257a551eb75\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\1f685bd8d1ebc59b45e31257a551eb75\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\104fb8947ee93a311a689557efae9169\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\104fb8947ee93a311a689557efae9169\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\125f3cd911e212a0325c5074d5cbd711\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\125f3cd911e212a0325c5074d5cbd711\AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\4ad754477f96395c6a211a86af40b411\AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\4ad754477f96395c6a211a86af40b411\AndroidManifest.xml:27:13-51
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\0c1cd544f1e833c11d3911b4a0185b64\AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\0c1cd544f1e833c11d3911b4a0185b64\AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\0c1cd544f1e833c11d3911b4a0185b64\AndroidManifest.xml:26:13-58

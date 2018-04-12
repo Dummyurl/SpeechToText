@@ -1,16 +1,22 @@
 package info.pratham.speechtotext;
 
+import android.annotation.SuppressLint;
+import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
+import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -41,23 +47,23 @@ import java.util.zip.ZipOutputStream;
 import info.pratham.speechtotext.syncoperations.NetworkChangeReceiver;
 import info.pratham.speechtotext.syncoperations.SyncUtility;
 
+import static info.pratham.speechtotext.syncoperations.NetworkUtil.getConnectivityStatus;
+
 
 public class FormActivity extends AppCompatActivity {
 
     public Button btnSubmit, btnSync;
     public EditText et_name, et_age, et_location, et_education, et_phno;
     DBHelper dbHelper;
-    String uName, uAge, uLocation, uEducation, uPhno, transferFileName,pushAPI;
-    String internalStorgePath, strData, pushFileName;
-    File[] filesForBackup;
-    ArrayList<String> path = new ArrayList<String>();
+    String uName, uAge, uLocation, uEducation, uPhno;
+    static String deviceId;
+    String internalStorgePath, strData;
     public static final int RequestPermissionCode = 1;
     static JSONArray readingData;
-    int cnt = 0,allFiles=0;
-    int [] fileCount;
-    Boolean sentFlag = false;
+    static boolean syncFlg = false;
+
     NetworkChangeReceiver networkChangeReceiver;
-    public static ProgressDialog progress;
+    //public static ProgressDialog progress;
 
     private static final DateFormat dateTimeFormat = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss", Locale.ENGLISH);
 
@@ -71,9 +77,6 @@ public class FormActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form);
         readingData = getJsonData();
-        pushFileName = "SttAppData-";
-        pushAPI="http://prodigi.openiscool.org/api/pushdata/pushdata";
-        transferFileName = "SttAppData-";
         dbHelper = new DBHelper(this);
         btnSubmit = (Button) findViewById(R.id.btnSubmit);
         btnSync = (Button) findViewById(R.id.btnSync);
@@ -82,6 +85,8 @@ public class FormActivity extends AppCompatActivity {
         et_location = (EditText) findViewById(R.id.etPlace);
         et_education = (EditText) findViewById(R.id.etEdu);
         et_phno = (EditText) findViewById(R.id.etPhoneNo);
+
+        deviceId = Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
 
         networkChangeReceiver = new NetworkChangeReceiver();
 
@@ -110,7 +115,7 @@ public class FormActivity extends AppCompatActivity {
                 uEducation = String.valueOf(et_education.getText());
                 uPhno = String.valueOf(et_phno.getText());
 
-                if (!uName.equalsIgnoreCase("") || !uAge.equalsIgnoreCase("") || !uLocation.equalsIgnoreCase("") || !uEducation.equalsIgnoreCase("") || !uPhno.equalsIgnoreCase("")) {
+                if (!uName.equalsIgnoreCase("") && !uAge.equalsIgnoreCase("") && !uLocation.equalsIgnoreCase("") && !uEducation.equalsIgnoreCase("") && uPhno.length()==10) {
 
                     MyUser user = new MyUser();
                     MyDBHelper myDBHelper = new MyDBHelper(FormActivity.this);
@@ -123,7 +128,7 @@ public class FormActivity extends AppCompatActivity {
                     user.Location = uLocation;
                     user.Education = uEducation;
                     user.Phone = uPhno;
-                    user.Date = ""+getCurrentDateTime();
+                    user.Date = "" + getCurrentDateTime();
 
                     myDBHelper.AddUser(user);
                     BackupDatabase.backup(FormActivity.this);
@@ -152,21 +157,40 @@ public class FormActivity extends AppCompatActivity {
         btnSync.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                createJsonforTransfer();
-                networkChangeReceiver.onReceive(FormActivity.this, new Intent());
+
+                int res = getConnectivityStatus(FormActivity.this);
+                if(res == 0 )
+                    showDialog();
+                else {
+                    SyncProcess syncProcess = new SyncProcess(FormActivity.this);
+                    syncFlg = true;
+                    syncProcess.createJsonforTransfer();
+                }
             }
         });
 
     }
 
-    public void deleteDBEntries() {
-        MyDBHelper myDBHelper = new MyDBHelper(this);
-        boolean success = myDBHelper.deleteAllEntries();
-        Log.d("Success", String.valueOf(success));
+    public void showDialog() {
+
+        final Dialog dialog = new Dialog(FormActivity.this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        dialog.setContentView(R.layout.custom_dialog_net);
+        dialog.setCanceledOnTouchOutside(false);
+        Button button = dialog.findViewById(R.id.dialog_btn_ok);
+        dialog.show();
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+
     }
 
-
-    void deleteRecursive(File fileOrDirectory) {
+/*    void deleteRecursive(File fileOrDirectory) {
         if (fileOrDirectory.isDirectory())
             for (File child : fileOrDirectory.listFiles())
                 deleteRecursive(child);
@@ -175,7 +199,7 @@ public class FormActivity extends AppCompatActivity {
         if (!file.exists())
             file.mkdir();
 
-    }
+    }*/
 
     /***********************************************************************************************/
     public boolean zipFileAtPath(String sourcePath, String toLocation) {
@@ -265,293 +289,310 @@ public class FormActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        btnSync.performClick();
+//        btnSync.performClick();
 //        MyBroadcastReceiver myBroadcastReceiver = new MyBroadcastReceiver();
     }
 
-    public void createJsonforTransfer() {
+    public static class SyncProcess{
 
-        MyDBHelper myDBHelper = new MyDBHelper(this);
-        MyUser user = new MyUser();
-
-        List<MyUser> myUserList = myDBHelper.getAllUserData();
-
-        try {
-
-            JSONArray usetData = new JSONArray(),
-                    sttData = new JSONArray();
-
-            for (int i = 0; i < myUserList.size(); i++) {
-                JSONObject _obj = new JSONObject();
-                MyUser myUsersss = myUserList.get(i);
-
-                try {
-                    _obj.put("Id", myUsersss.getId());
-                    _obj.put("Name", myUsersss.getName());
-                    _obj.put("Age", myUsersss.getAge());
-                    _obj.put("Location", myUsersss.getLocation());
-                    _obj.put("Education", myUsersss.getEducation());
-                    _obj.put("Phone", myUsersss.getPhone());
-                    _obj.put("Date", myUsersss.getDate());
-                    usetData.put(_obj);
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            }
-
-            {
+        ArrayList<String> path = new ArrayList<String>();
+        String pushAPI= "http://prodigi.openiscool.org/api/pushdata/pushdata",transferFileName, pushFileName = "SttAppData-";
+        Context context;
+        int cnt = 0, allFiles = 0;
+        int[] fileCount;
+        File[] filesForBackup;
+        Boolean sentFlag = false;
 
 
-                if (myUserList!=null) {
+        public SyncProcess(Context context) {
+            this.context = context;
+        }
 
-                    List<SttData> mySttList = myDBHelper.getAllSttData();
-                    JSONObject sttObj;
+        @SuppressLint("HardwareIds")
+        public void createJsonforTransfer() {
 
-                    if (mySttList != null) {
-                        for (int i = 0; i < mySttList.size(); i++) {
-                            sttObj = new JSONObject();
-                            sttObj.put("ReordId", mySttList.get(i).getReordId());
-                            sttObj.put("UserID", mySttList.get(i).getUserID());
-                            sttObj.put("OriginalText", mySttList.get(i).getOriginalText());
-                            sttObj.put("VoiceText", mySttList.get(i).getVoiceText());
-                            sttObj.put("Date", mySttList.get(i).getDateTime());
+            MyDBHelper myDBHelper = new MyDBHelper(context);
+            MyUser user = new MyUser();
 
-                            sttData.put(sttObj);
+            List<MyUser> myUserList = myDBHelper.getAllUserData();
+            List<SttData> mySttList = myDBHelper.getAllSttData();
+            try {
+                if (mySttList.size() > 20 || syncFlg) {
+
+                    syncFlg = false;
+                    JSONArray usetData = new JSONArray(),
+                            sttData = new JSONArray();
+
+                    for (int i = 0; i < myUserList.size(); i++) {
+                        JSONObject _obj = new JSONObject();
+                        MyUser myUsersss = myUserList.get(i);
+
+                        try {
+                            _obj.put("Id", myUsersss.getId());
+                            _obj.put("Name", myUsersss.getName());
+                            _obj.put("Age", myUsersss.getAge());
+                            _obj.put("Location", myUsersss.getLocation());
+                            _obj.put("Education", myUsersss.getEducation());
+                            _obj.put("Phone", myUsersss.getPhone());
+                            _obj.put("Date", myUsersss.getDate());
+                            usetData.put(_obj);
+                        } catch (JSONException e) {
+                            e.printStackTrace();
                         }
                     }
 
-                    JSONObject metaDataObj = new JSONObject();
-                    metaDataObj.put("UserData", usetData.length());
-                    metaDataObj.put("STTData", sttData.length());
-                    metaDataObj.put("TransId", UUID.randomUUID().toString());
-                    metaDataObj.put("TransDate", getCurrentDateTime());
+                    {
 
-                    String requestString = "{ \"metadata\": " + metaDataObj +
-                            ", \"UserData\": " + usetData +
-                            ", \"STTData\": " + sttData + "}";
-                    transferFileName = "SttAppData-" + String.valueOf(UUID.randomUUID());
-                    WriteSettings(this, requestString, transferFileName);
+
+                        if (myUserList != null) {
+
+                            JSONObject sttObj;
+
+                            if (mySttList != null) {
+                                for (int i = 0; i < mySttList.size(); i++) {
+                                    sttObj = new JSONObject();
+                                    sttObj.put("ReordId", mySttList.get(i).getReordId());
+                                    sttObj.put("UserID", mySttList.get(i).getUserID());
+                                    sttObj.put("OriginalText", mySttList.get(i).getOriginalText());
+                                    sttObj.put("VoiceText", mySttList.get(i).getVoiceText());
+                                    sttObj.put("Date", mySttList.get(i).getDateTime());
+
+                                    sttData.put(sttObj);
+                                }
+                            }
+
+                            JSONObject metaDataObj = new JSONObject();
+                            metaDataObj.put("UserData", ""+usetData.length());
+                            metaDataObj.put("STTData", ""+sttData.length());
+                            metaDataObj.put("TransId", ""+UUID.randomUUID());
+                            metaDataObj.put("DeviceId", ""+ deviceId);
+                            metaDataObj.put("AppVersion", ""+BuildConfig.VERSION_NAME);
+                            metaDataObj.put("TransDate", ""+getCurrentDateTime());
+
+                            String requestString = "{ \"metadata\": " + metaDataObj +
+                                    ", \"UserData\": " + usetData +
+                                    ", \"STTData\": " + sttData + "}";
+                            transferFileName = "SttAppData-" + String.valueOf(UUID.randomUUID());
+                            WriteSettings(context, requestString, transferFileName);
+                        }
+                    }
                 }
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        //      }
-    }
-
-    public void WriteSettings(Context context, String data, String fName) {
-
-        FileOutputStream fOut = null;
-        OutputStreamWriter osw = null;
-
-        try {
-            String MainPath;
-            MainPath = Environment.getExternalStorageDirectory() + "/.PrathamSTT/JsonsToPush/" + fName + ".json";
-            File file = new File(MainPath);
-            try {
-                path.add(MainPath);
-                fOut = new FileOutputStream(file);
-                osw = new OutputStreamWriter(fOut);
-                osw.write(data);
-                osw.flush();
-                osw.close();
-                fOut.close();
-
             } catch (Exception e) {
                 e.printStackTrace();
             }
-            pushToServer();
-        } catch (Exception e) {
-            e.printStackTrace();
-            Toast.makeText(context, "Settings not saved", Toast.LENGTH_SHORT).show();
+
+            //      }
         }
-    }
 
-    public void pushToServer() throws IOException, ExecutionException, InterruptedException {
+        public void WriteSettings(Context context, String data, String fName) {
 
-        cnt=0;
-        allFiles=0;
+            FileOutputStream fOut = null;
+            OutputStreamWriter osw = null;
 
-        // Checking Internet Connection
-        SyncUtility syncUtility = new SyncUtility(this);
+            try {
+                String MainPath;
+                MainPath = Environment.getExternalStorageDirectory() + "/.PrathamSTT/JsonsToPush/" + fName + ".json";
+                File file = new File(MainPath);
+                try {
+                    path.add(MainPath);
+                    fOut = new FileOutputStream(file);
+                    osw = new OutputStreamWriter(fOut);
+                    osw.write(data);
+                    osw.flush();
+                    osw.close();
+                    fOut.close();
 
-        if (SyncUtility.isDataConnectionAvailable(this)) {
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+                pushToServer();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
 
-/*            Toast.makeText(AdminConsole.this, "Connected to the Internet !!!", Toast.LENGTH_SHORT).show();*/
+        public void pushToServer() {
 
-            //Moving to Receive usage
-            String path;
+            cnt = 0;
+            allFiles = 0;
+
+            // Checking Internet Connection
+            SyncUtility syncUtility = new SyncUtility(context);
+
+            if (SyncUtility.isDataConnectionAvailable(context)) {
+
+                /*            Toast.makeText(AdminConsole.this, "Connected to the Internet !!!", Toast.LENGTH_SHORT).show();*/
+
+                //Moving to Receive usage
+                String path;
                 path = Environment.getExternalStorageDirectory().toString() + "/.PrathamSTT/JsonsToPush";
 
-            String destFolder = Environment.getExternalStorageDirectory() + "/.PrathamSTT/jsonsBackUp";
+                String destFolder = Environment.getExternalStorageDirectory() + "/.PrathamSTT/jsonsBackUp";
 
-            Log.d("path", "pushToServer: " + path);
+                Log.d("path", "pushToServer: " + path);
 
-            File sttDir = new File(path);
-            if (sttDir.exists()) {
-                progress = new ProgressDialog(FormActivity.this);
-                progress.setMessage("Please Wait...");
-                progress.setCanceledOnTouchOutside(false);
-                progress.show();
+                File sttDir = new File(path);
+                if (sttDir.exists()) {
+/*                    progress = new ProgressDialog(context);
+                    progress.setMessage("Please Wait...");
+                    progress.setCanceledOnTouchOutside(false);
+                    progress.show();*/
 
-                File[] files = sttDir.listFiles();
-                filesForBackup = sttDir.listFiles();
+                    File[] files = sttDir.listFiles();
+                    filesForBackup = sttDir.listFiles();
 
-                for(int i=0; i<files.length;i++) {
-                    if (files[i].getName().contains(pushFileName))
-                        allFiles++;
-                }
-                fileCount = new int[files.length];
+                    for (int i = 0; i < files.length; i++) {
+                        if (files[i].getName().contains(pushFileName))
+                            allFiles++;
+                    }
+                    fileCount = new int[files.length];
 //                Toast.makeText(this, "Pushing data to server Please wait...", Toast.LENGTH_SHORT).show();
-                for (int i = 0; i < files.length; i++) {
-                    /*  cnt++;*/
-                    if (files[i].getName().contains(pushFileName)) {
-                        try {
-                            startPushing(convertToString(files[i]), syncUtility, i, destFolder);
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
-                    }
-                }
-
-                Handler handler = new Handler();
-                handler.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        try {
-                            if (cnt == 0) {
-                                progress.dismiss();
+                    for (int i = 0; i < files.length; i++) {
+                        /*  cnt++;*/
+                        if (files[i].getName().contains(pushFileName)) {
+                            try {
+                                startPushing(convertToString(files[i]), syncUtility, i, destFolder);
+                            } catch (Exception e) {
+                                e.printStackTrace();
                             }
-                        } catch (Exception e) {
-                            e.printStackTrace();
                         }
                     }
-                }, 1000);
-            }
-        }/* else {
+
+                    Handler handler = new Handler();
+                    handler.postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            try {
+                                if (cnt == 0) {
+                                    //progress.dismiss();
+                                }
+                            } catch (Exception e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    }, 1000);
+                }
+            }/* else {
             Toast.makeText(AdminConsole.this, "Please Connect to the Internet !!!", Toast.LENGTH_SHORT).show();
         }*/
 
-    }
-
-    public void startPushing(String jasonDataToPush, SyncUtility syncUtility, int fileNo, String destinationFolder) throws Exception {
-
-        ArrayList<String> arrayListToTransfer = new ArrayList<String>();
-        arrayListToTransfer.add(jasonDataToPush);
-        Log.d("pushedJson :::", jasonDataToPush);
-        new AsyncTaskRunner(syncUtility, jasonDataToPush, fileNo, destinationFolder).execute();
-    }
-
-    public String convertToString(File file) throws IOException {
-        int length = (int) file.length();
-        FileInputStream in = null;
-        byte[] bytes = new byte[length];
-        try {
-            in = new FileInputStream(file);
-            in.read(bytes);
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            in.close();
-        }
-        String contents = new String(bytes);
-        return contents;
-    }
-
-    public static void fileCutPaste(File toMove, String destFolder) {
-        try {
-            File destinationFolder = new File(destFolder);
-            File destinationFile = new File(destFolder + "/" + toMove.getName());
-            if (!destinationFolder.exists()) {
-                destinationFolder.mkdir();
-            }
-            FileInputStream fileInputStream = new FileInputStream(toMove);
-            FileOutputStream fileOutputStream = new FileOutputStream(destinationFile);
-
-            int bufferSize;
-            byte[] bufffer = new byte[512];
-            while ((bufferSize = fileInputStream.read(bufffer)) > 0) {
-                fileOutputStream.write(bufffer, 0, bufferSize);
-            }
-            toMove.delete();
-            fileInputStream.close();
-            fileOutputStream.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    private class AsyncTaskRunner extends AsyncTask<String, String, String> {
-
-        private String resp;
-        //        ProgressDialog progressDialog;
-        SyncUtility syncUtility;
-        String jasonDataToPush, folderForBackup;
-        int currentFileNo;
-
-
-        public AsyncTaskRunner(SyncUtility syncUtility, String jasonDataToPush, int currentFileNo, String folderForBackup) {
-            this.syncUtility = syncUtility;
-            this.jasonDataToPush = jasonDataToPush;
-            this.currentFileNo = currentFileNo;
-            this.folderForBackup = folderForBackup;
         }
 
-        @Override
-        protected String doInBackground(String... params) {
-            publishProgress("Sleeping..."); // Calls onProgressUpdate()
+        public void startPushing(String jasonDataToPush, SyncUtility syncUtility, int fileNo, String destinationFolder) {
+
+            ArrayList<String> arrayListToTransfer = new ArrayList<String>();
+            arrayListToTransfer.add(jasonDataToPush);
+            Log.d("pushedJson :::", jasonDataToPush);
+            new AsyncTaskRunner(syncUtility, jasonDataToPush, fileNo, destinationFolder).execute();
+        }
+
+        public String convertToString(File file) throws IOException {
+            int length = (int) file.length();
+            FileInputStream in = null;
+            byte[] bytes = new byte[length];
             try {
-                String pushResult = syncUtility.sendData(pushAPI, jasonDataToPush);
-                Log.d("pushResult", pushResult);
-                if (pushResult.equalsIgnoreCase("success")) {
-                    ////// incriment count
-                    cnt++;
-                    fileCutPaste(filesForBackup[currentFileNo], folderForBackup);
-
-
-                    if(cnt == allFiles)
-                        sentFlag = true;
-                }
-
+                in = new FileInputStream(file);
+                in.read(bytes);
             } catch (Exception e) {
                 e.printStackTrace();
-                resp = e.getMessage();
+            } finally {
+                in.close();
             }
-            return resp;
+            String contents = new String(bytes);
+            return contents;
         }
 
+        public void fileCutPaste(File toMove, String destFolder) {
+            try {
+                File destinationFolder = new File(destFolder);
+                File destinationFile = new File(destFolder + "/" + toMove.getName());
+                if (!destinationFolder.exists()) {
+                    destinationFolder.mkdir();
+                }
+                FileInputStream fileInputStream = new FileInputStream(toMove);
+                FileOutputStream fileOutputStream = new FileOutputStream(destinationFile);
 
-        @Override
-        protected void onPostExecute(String result) {
-            if (cnt == allFiles) {
-                progress.dismiss();
-                deleteDBEntries();
-            } else if (!sentFlag && (cnt == allFiles) ) {
-                progress.dismiss();
-                deleteDBEntries();
+                int bufferSize;
+                byte[] bufffer = new byte[512];
+                while ((bufferSize = fileInputStream.read(bufffer)) > 0) {
+                    fileOutputStream.write(bufffer, 0, bufferSize);
+                }
+                toMove.delete();
+                fileInputStream.close();
+                fileOutputStream.close();
+            } catch (Exception e) {
+                e.printStackTrace();
             }
         }
 
+        private class AsyncTaskRunner extends AsyncTask<String, String, String> {
 
-        @Override
-        protected void onPreExecute() { }
+            private String resp;
+            //        ProgressDialog progressDialog;
+            SyncUtility syncUtility;
+            String jasonDataToPush, folderForBackup;
+            int currentFileNo;
 
 
-        @Override
-        protected void onProgressUpdate(String... text) { }
-    }
+            public AsyncTaskRunner(SyncUtility syncUtility, String jasonDataToPush, int currentFileNo, String folderForBackup) {
+                this.syncUtility = syncUtility;
+                this.jasonDataToPush = jasonDataToPush;
+                this.currentFileNo = currentFileNo;
+                this.folderForBackup = folderForBackup;
+            }
 
-    public class MyBroadcastReceiver extends BroadcastReceiver {
-        private static final String TAG = "MyBroadcastReceiver";
+            @Override
+            protected String doInBackground(String... params) {
+                publishProgress("Sleeping..."); // Calls onProgressUpdate()
+                try {
+                    String pushResult = syncUtility.sendData(pushAPI, jasonDataToPush);
+                    Log.d("pushResult", pushResult);
+                    if (pushResult.equalsIgnoreCase("success")) {
+                        ////// incriment count
+                        cnt++;
+                        fileCutPaste(filesForBackup[currentFileNo], folderForBackup);
 
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            StringBuilder sb = new StringBuilder();
-            sb.append("Action: " + intent.getAction() + "\n");
-            sb.append("URI: " + intent.toUri(Intent.URI_INTENT_SCHEME).toString() + "\n");
-            String log = sb.toString();
-            Log.d(TAG, log);
-            Toast.makeText(context, "MyBroadcastReceiver " + log, Toast.LENGTH_LONG).show();
+
+                        if (cnt == allFiles)
+                            sentFlag = true;
+                    }
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    resp = e.getMessage();
+                }
+                return resp;
+            }
+
+
+            @Override
+            protected void onPostExecute(String result) {
+                if (cnt == allFiles) {
+                    //progress.dismiss();
+                    deleteDBEntries();
+                } else if (!sentFlag && (cnt == allFiles)) {
+                    //progress.dismiss();
+                    deleteDBEntries();
+                }
+            }
+
+
+            @Override
+            protected void onPreExecute() {
+            }
+
+
+            @Override
+            protected void onProgressUpdate(String... text) {
+            }
         }
+
+        public void deleteDBEntries() {
+            MyDBHelper myDBHelper = new MyDBHelper(context);
+            boolean success = myDBHelper.deleteAllEntries();
+            Log.d("Success", String.valueOf(success));
+            BackupDatabase.backup(context);
+        }
+
     }
 }

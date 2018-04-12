@@ -244,7 +244,7 @@ public class MainActivity extends AppCompatActivity implements
             e.printStackTrace();
         }
         textToReadView.setText(mySentence);
-        printVoiceText.setText(" ");
+        printVoiceText.setText("");
     }
 
     @Override
@@ -303,16 +303,17 @@ public class MainActivity extends AppCompatActivity implements
             tempResultArray += " - " + matches.get(i);
             Log.d("res:::", "onResults: " + matches.get(i));
         }
+
+        tex = matches.get(0) + " ";
+
         for (int i = 0; i < matches.size(); i++) {
             if (mySentence.equalsIgnoreCase(matches.get(i))) {
                 tex = matches.get(i) + " ";
                 break;
-            } else
-                tex = matches.get(0) + " ";
-
+            }
         }
-        RecordedSpeech += tex;
 
+        RecordedSpeech += tex;
 /*        Toast.makeText(this, "" + tempResultArray, Toast.LENGTH_LONG).show();*/
 
         voiceStart = false;

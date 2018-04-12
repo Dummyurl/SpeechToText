@@ -304,6 +304,10 @@
         "source": "C:\\Users\\Ameya\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\4ad754477f96395c6a211a86af40b411\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
+        "merged": "G:\\GIT_STT\\SpeechToText\\app\\build\\intermediates\\res\\merged\\debug\\drawable_dialogbg.xml.flat",
+        "source": "G:\\GIT_STT\\SpeechToText\\app\\src\\main\\res\\drawable\\dialogbg.xml"
+    },
+    {
         "merged": "G:\\GIT_STT\\SpeechToText\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Ameya\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\4ad754477f96395c6a211a86af40b411\\res\\drawable-mdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
     },
@@ -742,6 +746,10 @@
     {
         "merged": "G:\\GIT_STT\\SpeechToText\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
         "source": "C:\\Users\\Ameya\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\125f3cd911e212a0325c5074d5cbd711\\res\\drawable-mdpi-v4\\notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "G:\\GIT_STT\\SpeechToText\\app\\build\\intermediates\\res\\merged\\debug\\layout_custom_dialog_net.xml.flat",
+        "source": "G:\\GIT_STT\\SpeechToText\\app\\src\\main\\res\\layout\\custom_dialog_net.xml"
     },
     {
         "merged": "G:\\GIT_STT\\SpeechToText\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_colored_material.xml.flat",
