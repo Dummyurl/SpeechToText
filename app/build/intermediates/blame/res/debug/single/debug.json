@@ -332,6 +332,10 @@
         "source": "C:\\Users\\Ameya\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\4ad754477f96395c6a211a86af40b411\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
     },
     {
+        "merged": "G:\\GIT_STT\\SpeechToText\\app\\build\\intermediates\\res\\merged\\debug\\drawable_iv_stop.png.flat",
+        "source": "G:\\GIT_STT\\SpeechToText\\app\\src\\main\\res\\drawable\\iv_stop.png"
+    },
+    {
         "merged": "G:\\GIT_STT\\SpeechToText\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_alert_dialog_material.xml.flat",
         "source": "C:\\Users\\Ameya\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\4ad754477f96395c6a211a86af40b411\\res\\layout\\abc_alert_dialog_material.xml"
     },

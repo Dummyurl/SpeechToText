@@ -140,7 +140,38 @@
         {
           "data": "আমার বাড়ির সামনে একটি নিমগাছ আছে."
         }
-      ]
+      ],
+      "numberList": [
+        {
+          "data":"০"
+        },
+        {
+          "data":"১"
+        },
+        {
+          "data":"২"
+        },
+        {
+          "data":"৩"
+        },
+        {
+          "data":"৪"
+        },
+        {
+          "data":"৫"
+        },
+        {
+          "data":"৬"
+        },
+        {
+          "data":"৭"
+        },
+        {
+          "data":"৮"
+        },
+        {
+          "data":"৯"
+        }]
     },
     {
       "language": "Gujarati",
@@ -264,7 +295,38 @@
         {
           "data": "તળાવમાં બતક પણ છે."
         }
-      ]
+      ],
+      "numberList": [
+        {
+          "data":"૦"
+        },
+        {
+          "data":"૧"
+        },
+        {
+          "data":"૨"
+        },
+        {
+          "data":"૩"
+        },
+        {
+          "data":"૪"
+        },
+        {
+          "data":"૫"
+        },
+        {
+          "data":"૬"
+        },
+        {
+          "data":"૭"
+        },
+        {
+          "data":"૮"
+        },
+        {
+          "data":"૯"
+        }]
     },
     {
       "language": "Hindi",
@@ -406,7 +468,38 @@
         {
           "data": "रेलगाड़ी बिजली से चलती है|"
         }
-      ]
+      ],
+      "numberList": [
+        {
+          "data":"०"
+        },
+        {
+          "data":"१"
+        },
+        {
+          "data":"२"
+        },
+        {
+          "data":"३"
+        },
+        {
+          "data":"४"
+        },
+        {
+          "data":"५"
+        },
+        {
+          "data":"६"
+        },
+        {
+          "data":"७"
+        },
+        {
+          "data":"८"
+        },
+        {
+          "data":"९"
+        }]
     },
     {
       "language": "Tamil",
@@ -548,7 +641,38 @@
         {
           "data": "இரண்டு கழுதைகள் சண்டை போட்டன."
         }
-      ]
+      ],
+      "numberList": [
+        {
+          "data":"௦"
+        },
+        {
+          "data":"௧"
+        },
+        {
+          "data":"௨"
+        },
+        {
+          "data":"௩"
+        },
+        {
+          "data":"௪"
+        },
+        {
+          "data":"௫"
+        },
+        {
+          "data":"௬"
+        },
+        {
+          "data":"௭"
+        },
+        {
+          "data":"௮"
+        },
+        {
+          "data":"௯"
+        }]
     },
     {
       "language": "Telugu",
@@ -690,7 +814,38 @@
         {
           "data": "పుస్తకాలు లేవు పోవయ్యా."
         }
-      ]
+      ],
+      "numberList": [
+        {
+          "data":"౦"
+        },
+        {
+          "data":"౧"
+        },
+        {
+          "data":"౨"
+        },
+        {
+          "data":"౩"
+        },
+        {
+          "data":"౪"
+        },
+        {
+          "data":"౫"
+        },
+        {
+          "data":"౬"
+        },
+        {
+          "data":"౭"
+        },
+        {
+          "data":"౮"
+        },
+        {
+          "data":"౯"
+        }]
     },
     {
       "language": "Marathi",
@@ -832,7 +987,38 @@
         {
           "data": "सोने खूप महाग असते."
         }
-      ]
+      ],
+      "numberList": [
+        {
+          "data":"०"
+        },
+        {
+          "data":"१"
+        },
+        {
+          "data":"२"
+        },
+        {
+          "data":"३"
+        },
+        {
+          "data":"४"
+        },
+        {
+          "data":"५"
+        },
+        {
+          "data":"६"
+        },
+        {
+          "data":"७"
+        },
+        {
+          "data":"८"
+        },
+        {
+          "data":"९"
+        }]
     },
     {
       "language": "Kannada",
@@ -974,7 +1160,38 @@
         {
           "data": "ನಮ್ಮ ಊರ ಶಾಲೆ ತುಂಬಾ ಸುಂದರವಾಗಿದೆ."
         }
-      ]
+      ],
+      "numberList": [
+        {
+          "data":"೦"
+        },
+        {
+          "data":"೧"
+        },
+        {
+          "data":"೨"
+        },
+        {
+          "data":"೩"
+        },
+        {
+          "data":"೪"
+        },
+        {
+          "data":"೫"
+        },
+        {
+          "data":"೬"
+        },
+        {
+          "data":"೭"
+        },
+        {
+          "data":"೮"
+        },
+        {
+          "data":"೯"
+        }]
     },
     {
       "language":"English",
@@ -1116,149 +1333,38 @@
         {
           "data":"The market is very far away."
         }
-      ]
-    },
-    {
-      "language":"English",
-      "words":[
-        {
-          "data":"hand"
-        },
-        {
-          "data":"star"
-        },
-        {
-          "data":"bus"
-        },
-        {
-          "data":"cat"
-        },
-        {
-          "data":"book"
-        },
-        {
-          "data":"foot"
-        },
-        {
-          "data":"fan"
-        },
-        {
-          "data":"crow"
-        },
-        {
-          "data":"girl"
-        },
-        {
-          "data":"ring"
-        },
-        {
-          "data":"clap"
-        },
-        {
-          "data":"king"
-        },
-        {
-          "data":"root"
-        },
-        {
-          "data":"bold"
-        },
-        {
-          "data":"old"
-        },
-        {
-          "data":"doll"
-        },
-        {
-          "data":"cup"
-        },
-        {
-          "data":"wish"
-        },
-        {
-          "data":"key"
-        },
-        {
-          "data":"rope"
-        },
-        {
-          "data":"house"
-        },
-        {
-          "data":"garden"
-        },
-        {
-          "data":"bag"
-        },
-        {
-          "data":"morning"
-        },
-        {
-          "data":"monkey"
-        },
-        {
-          "data":"children"
-        },
-        {
-          "data":"trees"
-        },
-        {
-          "data":"jump"
-        },
-        {
-          "data":"market"
-        },
-        {
-          "data":"cool"
-        }
       ],
-      "sentences":[
+      "numberList": [
         {
-          "data":"This is a house."
+          "data":"0"
         },
         {
-          "data":"Ravi is a boy."
+          "data":"1"
         },
         {
-          "data":"Salma is a little girl."
+          "data":"2"
         },
         {
-          "data":"There was a big tree in the garden."
+          "data":"3"
         },
         {
-          "data":"Rani has a bag and a book."
+          "data":"4"
         },
         {
-          "data":"Gita read it every morning on her way to school."
+          "data":"5"
         },
         {
-          "data":"Many children joined Asif and they all started playing."
+          "data":"6"
         },
         {
-          "data":"I go to school by bus."
+          "data":"7"
         },
         {
-          "data":"There is a hill in front of my house."
+          "data":"8"
         },
         {
-          "data":"The bus stops at my village."
-        },
-        {
-          "data":"This is a big monkey."
-        },
-        {
-          "data":"It was a rainy day."
-        },
-        {
-          "data":"Amar goes to the market."
-        },
-        {
-          "data":"The sky was full of clouds."
-        },
-        {
-          "data":"The market is very far away."
-        }
-      ]
+          "data":"9"
+        }]
     }
   ]
 }

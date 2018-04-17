@@ -14,9 +14,9 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
-import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
+
 import org.json.JSONArray;
 
 import java.util.ArrayList;
@@ -28,27 +28,27 @@ import static info.pratham.speechtotext.FormActivity.getCurrentDateTime;
 public class MainActivity extends AppCompatActivity implements
         RecognitionListener {
 
-    private ImageButton btnSpeak, btnHear, btnNextSentence;
+    private ImageButton btnSpeak, btnHearAnswer, btnNextSentence, btnHearQuestion;
     private TextView textToReadView, printVoiceText, tv_mic;
     private SpeechRecognizer speech = null;
     private Spinner language_sp, type_sp;
     public MyTTS ttspeech;
-    LinearLayout ll_Hear;
     SttData sttData;
     Intent intent;
+    int randomNum1, randomNum2;
     MyDBHelper myDBHelper;
     String tex = "";
     JSONArray readingData2, actualReadingData;
     static String languageSpinner, typeSpinner, engLang = "en-IN", hinLang = "gu-IN";
-    public String recName, recName2, LOG_TAG = "VoiceRecognitionActivity", uName, uID;
+    public String recName, recName2, LOG_TAG = "VoiceRecognitionActivity", uName, uID, numInText;
     static String RecordedSpeech = "", selectedLanguage = "en-IN", selectedType = "words", mySentence = "";
-    boolean voiceStart = false, stopped = false;
+    boolean voiceStart = false, stopped = false, numFlag = false, breakFlg = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        getSupportActionBar().hide();
 
         uName = getIntent().getStringExtra("uName");
         uID = getIntent().getStringExtra("uId");
@@ -61,13 +61,13 @@ public class MainActivity extends AppCompatActivity implements
         speech.setRecognitionListener(this);
 
         btnSpeak = (ImageButton) findViewById(R.id.btnSpeak);
-        btnHear = (ImageButton) findViewById(R.id.btnHear);
+        btnHearAnswer = (ImageButton) findViewById(R.id.btnHearAnswer);
+        btnHearQuestion = (ImageButton) findViewById(R.id.btnHearQuestion);
         btnNextSentence = (ImageButton) findViewById(R.id.btnNextSentence);
         language_sp = (Spinner) findViewById(R.id.language_spinner);
         type_sp = (Spinner) findViewById(R.id.type_spinner);
         printVoiceText = (TextView) findViewById(R.id.spokenText);
         textToReadView = (TextView) findViewById(R.id.textToRead);
-        ll_Hear = (LinearLayout) findViewById(R.id.ll_hear);
         tv_mic = (TextView) findViewById(R.id.tv_mic);
         textToReadView.setMovementMethod(new ScrollingMovementMethod());
         printVoiceText.setMovementMethod(new ScrollingMovementMethod());
@@ -78,11 +78,15 @@ public class MainActivity extends AppCompatActivity implements
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
                 String datasTyp = parent.getItemAtPosition(position).toString();
-                if(datasTyp.equalsIgnoreCase("words"))
+                numFlag = false;
+                if (datasTyp.equalsIgnoreCase("words"))
                     typeSpinner = "words";
-                else if(datasTyp.equalsIgnoreCase("sentences"))
+                else if (datasTyp.equalsIgnoreCase("sentences"))
                     typeSpinner = "sentences";
-
+                else {
+                    typeSpinner = "numberList";
+                    numFlag = true;
+                }
                 getReadingData();
             }
 
@@ -99,7 +103,7 @@ public class MainActivity extends AppCompatActivity implements
         languages.add("English");
         languages.add("Marathi");
         languages.add("Gujarati");
-        languages.add("Bangali");
+        languages.add("Bengali");
         languages.add("Kannada");
         languages.add("Tamil");
         languages.add("Telugu");
@@ -117,28 +121,36 @@ public class MainActivity extends AppCompatActivity implements
 
                 if (languageSpinner.equalsIgnoreCase("Hindi")) {
                     selectedLanguage = "hi-IN";
-                    ll_Hear.setVisibility(View.VISIBLE);
+                    btnHearAnswer.setVisibility(View.VISIBLE);
+                    btnHearQuestion.setVisibility(View.VISIBLE);
                 } else if (languageSpinner.equalsIgnoreCase("English")) {
                     selectedLanguage = "en-IN";
-                    ll_Hear.setVisibility(View.VISIBLE);
+                    btnHearAnswer.setVisibility(View.VISIBLE);
+                    btnHearQuestion.setVisibility(View.VISIBLE);
                 } else if (languageSpinner.equalsIgnoreCase("Marathi")) {
                     selectedLanguage = "mr-IN";
-                    ll_Hear.setVisibility(View.INVISIBLE);
+                    btnHearAnswer.setVisibility(View.INVISIBLE);
+                    btnHearQuestion.setVisibility(View.INVISIBLE);
                 } else if (languageSpinner.equalsIgnoreCase("Gujarati")) {
                     selectedLanguage = "gu-IN";
-                    ll_Hear.setVisibility(View.INVISIBLE);
+                    btnHearAnswer.setVisibility(View.INVISIBLE);
+                    btnHearQuestion.setVisibility(View.INVISIBLE);
                 } else if (languageSpinner.equalsIgnoreCase("Bangali")) {
                     selectedLanguage = "bn-IN";
-                    ll_Hear.setVisibility(View.INVISIBLE);
+                    btnHearAnswer.setVisibility(View.INVISIBLE);
+                    btnHearQuestion.setVisibility(View.INVISIBLE);
                 } else if (languageSpinner.equalsIgnoreCase("Kannada")) {
                     selectedLanguage = "kn-IN";
-                    ll_Hear.setVisibility(View.INVISIBLE);
+                    btnHearAnswer.setVisibility(View.INVISIBLE);
+                    btnHearQuestion.setVisibility(View.INVISIBLE);
                 } else if (languageSpinner.equalsIgnoreCase("Tamil")) {
                     selectedLanguage = "ta-IN";
-                    ll_Hear.setVisibility(View.INVISIBLE);
+                    btnHearAnswer.setVisibility(View.INVISIBLE);
+                    btnHearQuestion.setVisibility(View.INVISIBLE);
                 } else if (languageSpinner.equalsIgnoreCase("Telugu")) {
                     selectedLanguage = "te-IN";
-                    ll_Hear.setVisibility(View.INVISIBLE);
+                    btnHearAnswer.setVisibility(View.INVISIBLE);
+                    btnHearQuestion.setVisibility(View.INVISIBLE);
                 }
 
                 intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
@@ -159,6 +171,7 @@ public class MainActivity extends AppCompatActivity implements
         List<String> types = new ArrayList<String>();
         types.add("Words");
         types.add("Sentences");
+        types.add("Numbers");
 
         ArrayAdapter<String> dataTypeAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, types);
         dataTypeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -176,14 +189,16 @@ public class MainActivity extends AppCompatActivity implements
             public void onClick(View v) {
                 if (!voiceStart) {
                     tv_mic.setText("Stop");
+                    btnSpeak.setImageResource(R.drawable.iv_stop);
                     voiceStart = true;
                     RecordedSpeech = "";
-                    recName="NA";
+                    recName = "NA";
                     startSpeechInput();
                 } else {
                     stopSpeechInput();
                     voiceStart = false;
                     tv_mic.setText("Speak");
+                    btnSpeak.setImageResource(R.drawable.ic_mic);
                     try {
                         stopped = true;
                     } catch (Exception e) {
@@ -195,10 +210,19 @@ public class MainActivity extends AppCompatActivity implements
             }
         });
 
-        btnHear.setOnClickListener(new View.OnClickListener() {
+        btnHearQuestion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                PlaySpokenText();
+                String questionText = String.valueOf(textToReadView.getText());
+                PlaySpokenText(questionText);
+            }
+        });
+
+        btnHearAnswer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String answerText = String.valueOf(printVoiceText.getText());
+                PlaySpokenText(answerText);
             }
         });
     }
@@ -211,12 +235,6 @@ public class MainActivity extends AppCompatActivity implements
         speech.startListening(intent);
     }
 
-
-    private void PlaySpokenText() {
-        String writtenText = String.valueOf(printVoiceText.getText());
-        Log.d("lang", "PlaySpokenText: " + selectedLanguage);
-        ttspeech.playTTS(writtenText, selectedLanguage, 1);
-    }
 
     public void getReadingData() {
         try {
@@ -233,13 +251,30 @@ public class MainActivity extends AppCompatActivity implements
         getNextSentence();
     }
 
+    private void PlaySpokenText(String speechText) {
+        Log.d("lang", "PlaySpokenText: " + selectedLanguage + "          speechText: " + speechText);
+        ttspeech.playTTS(speechText, selectedLanguage, 1);
+    }
+
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public void getNextSentence() {
 
         BackupDatabase.backup(MainActivity.this);
         try {
-            int randomNum = ThreadLocalRandom.current().nextInt(0, actualReadingData.length());
-            mySentence = actualReadingData.getJSONObject(randomNum).getString("data");
+            if (numFlag) {
+                randomNum1 = ThreadLocalRandom.current().nextInt(0, actualReadingData.length());
+                randomNum2 = ThreadLocalRandom.current().nextInt(0, actualReadingData.length());
+                if (randomNum1 != 0) {
+                    numInText = "" + randomNum1 + randomNum2;
+                    mySentence = actualReadingData.getJSONObject(randomNum1).getString("data") + actualReadingData.getJSONObject(randomNum2).getString("data");
+                } else {
+                    numInText = "" + randomNum2;
+                    mySentence = actualReadingData.getJSONObject(randomNum2).getString("data");
+                }
+            } else {
+                int randomNum = ThreadLocalRandom.current().nextInt(0, actualReadingData.length());
+                mySentence = actualReadingData.getJSONObject(randomNum).getString("data");
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -268,6 +303,7 @@ public class MainActivity extends AppCompatActivity implements
     public void onEndOfSpeech() {
         voiceStart = false;
         tv_mic.setText("Speak");
+        btnSpeak.setImageResource(R.drawable.ic_mic);
         try {
             if (!stopped) {
                 stopped = true;
@@ -288,11 +324,12 @@ public class MainActivity extends AppCompatActivity implements
         }
         voiceStart = false;
         tv_mic.setText("Speak");
+        btnSpeak.setImageResource(R.drawable.ic_mic);
     }
 
     @Override
     public void onResults(Bundle results) {
-
+        breakFlg = false;
         System.out.println(LOG_TAG + " onResults");
         ArrayList<String> matches = results
                 .getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
@@ -301,39 +338,100 @@ public class MainActivity extends AppCompatActivity implements
         String tempResultArray = "";
         for (int i = 0; i < matches.size(); i++) {
             tempResultArray += " - " + matches.get(i);
-            Log.d("res:::", "onResults: " + matches.get(i));
+            Log.d("res:::", i + ") Results: " + matches.get(i));
         }
 
-        tex = matches.get(0) + " ";
+        Log.d("res:::", "\n\nRandom Nos: " + randomNum1 + ", " + randomNum2);
 
-        for (int i = 0; i < matches.size(); i++) {
-            if (mySentence.equalsIgnoreCase(matches.get(i))) {
-                tex = matches.get(i) + " ";
-                break;
+        try {
+            tex = matches.get(0) + " ";
+            Log.d("res:::", "\n\n tex : " + tex);
+
+            String randomNoStr1 = "" + randomNum1, randomNoStr2 = "" + randomNum2;
+
+            for (int i = 0; i < matches.size(); i++) {
+                if (numFlag) {
+                    String resNum = matches.get(i);
+                    Log.d("res:::", "\n\nresNum: " + resNum);
+/*
+                    if (randomNum1 == 0) {
+                        if ( numInText.equalsIgnoreCase("0"+matches.get(i)) ) {
+                            tex = actualReadingData.getJSONObject(randomNum1).getString("data")
+                                    + actualReadingData.getJSONObject(randomNum2).getString("data");
+                            break;
+                        }
+                    } else {
+*/
+                    if (numInText.equalsIgnoreCase("" + matches.get(i))) {
+                        tex = actualReadingData.getJSONObject(randomNum1).getString("data")
+                                + actualReadingData.getJSONObject(randomNum2).getString("data");
+                        breakFlg = true;
+                        break;
+                    }
+//                    }
+                } else {
+                    if (mySentence.equalsIgnoreCase(matches.get(i))) {
+                        tex = matches.get(i) + " ";
+                        break;
+                    }
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        if (!breakFlg) {
+            breakFlg = false;
+            for (int j = 0; j < matches.size(); j++) {
+                try {
+                    int tempNo = Integer.parseInt(matches.get(j));
+                    Log.d("ressss", "Not True Num: "+tempNo);
+                    if (tempNo < 100) {
+                        try {
+                            if (tempNo < 10) {
+                                tex = actualReadingData.getJSONObject(Integer.parseInt(String.valueOf(matches.get(j).charAt(0)))).getString("data");
+                            } else {
+                                tex = actualReadingData.getJSONObject(Integer.parseInt(String.valueOf(matches.get(j).charAt(0)))).getString("data") +
+                                        actualReadingData.getJSONObject(Integer.parseInt(String.valueOf(matches.get(j).charAt(1)))).getString("data");
+                            }
+                            break;
+                        } catch (Exception e) {
+                            //tex = matches.get(j) + " ";
+                        }
+                    }
+                } catch (Exception e) {
+                }
             }
         }
 
+
         RecordedSpeech += tex;
-/*        Toast.makeText(this, "" + tempResultArray, Toast.LENGTH_LONG).show();*/
+        /*        Toast.makeText(this, "" + tempResultArray, Toast.LENGTH_LONG).show();*/
 
         voiceStart = false;
         tv_mic.setText("Speak");
+        btnSpeak.setImageResource(R.drawable.ic_mic);
 
         sttData.ReordId = recName;
         sttData.UserID = uID;
         sttData.OriginalText = String.valueOf(textToReadView.getText());
         sttData.VoiceText = tex;
-        sttData.DateTime= ""+getCurrentDateTime();
+        sttData.DateTime = "" + getCurrentDateTime();
 
         myDBHelper.AddSttText(sttData);
 
         BackupDatabase.backup(MainActivity.this);
 
-        try {
+        try
+
+        {
             if (!stopped) {
                 stopped = true;
             }
-        } catch (Exception e) {
+        } catch (
+                Exception e)
+
+        {
             e.printStackTrace();
         }
         printVoiceText.setText(tex);
