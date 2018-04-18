@@ -144,7 +144,7 @@ public class FormActivity extends AppCompatActivity {
                     intent.putExtra("uId", studentId);
                     startActivity(intent);
                 } else {
-                    Toast.makeText(FormActivity.this, "Please feel all details", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(FormActivity.this, "Please fill all fields", Toast.LENGTH_SHORT).show();
                 }
 
 /*                Intent intent;

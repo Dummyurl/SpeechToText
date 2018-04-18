@@ -9,12 +9,21 @@
     <color name="bg_gradient_end">#f4ed62</color>
     <color name="rounded_corner_bg">#ff8d4b</color>
     <color name="transparent_white">#77ffffff</color>
+    <color name="transparent_white_btn">#a1ffffff</color>
     <color name="transparent_white_dark">#53ffffff</color>
     <color name="simple_black">#1e1e1e</color>
     <color name="blackTransparent">#9b0e0e0e</color>
     <color name="redTransparent">#56de0408</color>
     <color name="blueTransparent">#56192cfd</color>
     <color name="myRed">#a4de0408</color>
+    <color name="myRedStroke">#de0408</color>
+    <color name="myYellowStroke">#9C27B0</color>
     <color name="myBlue">#a4192cfd</color>
+    <color name="myBlueStroke">#192cfd</color>
+    <color name="correctAnsbg">#b4b5ffa2</color>
+    <color name="correctAnsStroke">#068b16</color>
+    <color name="wrongAnsbg">#b4faa5a0</color>
+    <color name="wrongtAnsStroke">#8b0606</color>
+
 
 </resources>

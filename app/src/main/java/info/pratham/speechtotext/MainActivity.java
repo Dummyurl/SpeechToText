@@ -13,6 +13,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements
         RecognitionListener {
 
     private ImageButton btnSpeak, btnHearAnswer, btnNextSentence, btnHearQuestion;
+    private FrameLayout ans_framelayout;
     private TextView textToReadView, printVoiceText, tv_mic;
     private SpeechRecognizer speech = null;
     private Spinner language_sp, type_sp;
@@ -60,6 +62,7 @@ public class MainActivity extends AppCompatActivity implements
         speech = SpeechRecognizer.createSpeechRecognizer(this);
         speech.setRecognitionListener(this);
 
+        ans_framelayout = (FrameLayout) findViewById(R.id.ans_framelayout);
         btnSpeak = (ImageButton) findViewById(R.id.btnSpeak);
         btnHearAnswer = (ImageButton) findViewById(R.id.btnHearAnswer);
         btnHearQuestion = (ImageButton) findViewById(R.id.btnHearQuestion);
@@ -79,13 +82,19 @@ public class MainActivity extends AppCompatActivity implements
 
                 String datasTyp = parent.getItemAtPosition(position).toString();
                 numFlag = false;
-                if (datasTyp.equalsIgnoreCase("words"))
+                if (datasTyp.equalsIgnoreCase("words")) {
                     typeSpinner = "words";
-                else if (datasTyp.equalsIgnoreCase("sentences"))
+                    textToReadView.setTextSize(55f);
+                    printVoiceText.setTextSize(45f);
+                } else if (datasTyp.equalsIgnoreCase("sentences")) {
                     typeSpinner = "sentences";
-                else {
+                    textToReadView.setTextSize(35f);
+                    printVoiceText.setTextSize(30f);
+                } else {
                     typeSpinner = "numberList";
                     numFlag = true;
+                    textToReadView.setTextSize(75f);
+                    printVoiceText.setTextSize(65f);
                 }
                 getReadingData();
             }
@@ -135,7 +144,7 @@ public class MainActivity extends AppCompatActivity implements
                     selectedLanguage = "gu-IN";
                     btnHearAnswer.setVisibility(View.INVISIBLE);
                     btnHearQuestion.setVisibility(View.INVISIBLE);
-                } else if (languageSpinner.equalsIgnoreCase("Bangali")) {
+                } else if (languageSpinner.equalsIgnoreCase("Bengali")) {
                     selectedLanguage = "bn-IN";
                     btnHearAnswer.setVisibility(View.INVISIBLE);
                     btnHearQuestion.setVisibility(View.INVISIBLE);
@@ -193,6 +202,8 @@ public class MainActivity extends AppCompatActivity implements
                     voiceStart = true;
                     RecordedSpeech = "";
                     recName = "NA";
+                    printVoiceText.setText("");
+                    ans_framelayout.setBackgroundResource(R.drawable.trans_black_stroke);
                     startSpeechInput();
                 } else {
                     stopSpeechInput();
@@ -204,7 +215,6 @@ public class MainActivity extends AppCompatActivity implements
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
-
                     stopSpeechInput();
                 }
             }
@@ -280,6 +290,7 @@ public class MainActivity extends AppCompatActivity implements
         }
         textToReadView.setText(mySentence);
         printVoiceText.setText("");
+        ans_framelayout.setBackgroundResource(R.drawable.trans_black_stroke);
     }
 
     @Override
@@ -331,8 +342,7 @@ public class MainActivity extends AppCompatActivity implements
     public void onResults(Bundle results) {
         breakFlg = false;
         System.out.println(LOG_TAG + " onResults");
-        ArrayList<String> matches = results
-                .getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
+        ArrayList<String> matches = results.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
 
         tex = "";
         String tempResultArray = "";
@@ -344,34 +354,26 @@ public class MainActivity extends AppCompatActivity implements
         Log.d("res:::", "\n\nRandom Nos: " + randomNum1 + ", " + randomNum2);
 
         try {
-            tex = matches.get(0) + " ";
+            tex = matches.get(0) + "";
             Log.d("res:::", "\n\n tex : " + tex);
-
+            ans_framelayout.setBackgroundResource(R.drawable.wrong_ans_bg);
             String randomNoStr1 = "" + randomNum1, randomNoStr2 = "" + randomNum2;
 
             for (int i = 0; i < matches.size(); i++) {
                 if (numFlag) {
                     String resNum = matches.get(i);
                     Log.d("res:::", "\n\nresNum: " + resNum);
-/*
-                    if (randomNum1 == 0) {
-                        if ( numInText.equalsIgnoreCase("0"+matches.get(i)) ) {
-                            tex = actualReadingData.getJSONObject(randomNum1).getString("data")
-                                    + actualReadingData.getJSONObject(randomNum2).getString("data");
-                            break;
-                        }
-                    } else {
-*/
                     if (numInText.equalsIgnoreCase("" + matches.get(i))) {
                         tex = actualReadingData.getJSONObject(randomNum1).getString("data")
                                 + actualReadingData.getJSONObject(randomNum2).getString("data");
                         breakFlg = true;
+                        ans_framelayout.setBackgroundResource(R.drawable.correct_ans_bg);
                         break;
                     }
-//                    }
                 } else {
                     if (mySentence.equalsIgnoreCase(matches.get(i))) {
                         tex = matches.get(i) + " ";
+                        ans_framelayout.setBackgroundResource(R.drawable.correct_ans_bg);
                         break;
                     }
                 }
@@ -385,7 +387,8 @@ public class MainActivity extends AppCompatActivity implements
             for (int j = 0; j < matches.size(); j++) {
                 try {
                     int tempNo = Integer.parseInt(matches.get(j));
-                    Log.d("ressss", "Not True Num: "+tempNo);
+                    String tempNostr = "" + tempNo;
+                    Log.d("ressss", "Not True Num: " + tempNo);
                     if (tempNo < 100) {
                         try {
                             if (tempNo < 10) {
@@ -396,46 +399,46 @@ public class MainActivity extends AppCompatActivity implements
                             }
                             break;
                         } catch (Exception e) {
+                            Log.d("Exception", "inCatch: This is in the first catch");
                             //tex = matches.get(j) + " ";
+                        }
+                    } else {
+                        int numlen = tempNostr.length();
+                        tex = "";
+                        while (tempNo > 0) {
+                            int digit = tempNo % 10;
+                            tempNo = tempNo / 10;
+                            tex = actualReadingData.getJSONObject(digit).getString("data") + "" + tex;
                         }
                     }
                 } catch (Exception e) {
+                    Log.d("Exception", "inCatch: This is in the second catch");
                 }
             }
         }
 
-
         RecordedSpeech += tex;
-        /*        Toast.makeText(this, "" + tempResultArray, Toast.LENGTH_LONG).show();*/
-
         voiceStart = false;
+
         tv_mic.setText("Speak");
         btnSpeak.setImageResource(R.drawable.ic_mic);
-
         sttData.ReordId = recName;
         sttData.UserID = uID;
         sttData.OriginalText = String.valueOf(textToReadView.getText());
         sttData.VoiceText = tex;
         sttData.DateTime = "" + getCurrentDateTime();
-
         myDBHelper.AddSttText(sttData);
 
         BackupDatabase.backup(MainActivity.this);
 
-        try
-
-        {
-            if (!stopped) {
+        try {
+            if (!stopped)
                 stopped = true;
-            }
-        } catch (
-                Exception e)
-
-        {
+        } catch (Exception e) {
             e.printStackTrace();
         }
-        printVoiceText.setText(tex);
 
+        printVoiceText.setText(tex);
     }
 
     @Override
@@ -456,3 +459,13 @@ public class MainActivity extends AppCompatActivity implements
     }
 
 }
+
+/*
+                    if (randomNum1 == 0) {
+                        if ( numInText.equalsIgnoreCase("0"+matches.get(i)) ) {
+                            tex = actualReadingData.getJSONObject(randomNum1).getString("data")
+                                    + actualReadingData.getJSONObject(randomNum2).getString("data");
+                            break;
+                        }
+                    } else {}
+*/

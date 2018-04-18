@@ -1,0 +1,4 @@
+#Wed Apr 18 14:33:05 IST 2018
+base.0=G\:\\GIT_STT\\SpeechToText\\app\\build\\intermediates\\transforms\\dexMerger\\release\\0
+path.0=classes.dex
+renamed.0=classes.dex

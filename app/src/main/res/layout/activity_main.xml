@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_gradient"
+    android:background="@drawable/orangebgnew"
     android:orientation="vertical"
     android:weightSum="100">
 
@@ -44,7 +44,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_weight="1"
-            android:background="@drawable/white">
+            android:background="@drawable/trans_blue_stroke">
 
             <TextView
                 android:id="@+id/textToRead"
@@ -74,13 +74,14 @@
         </FrameLayout>
 
         <FrameLayout
+            android:id="@+id/ans_framelayout"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_weight="1"
-            android:background="@drawable/back">
+            android:background="@drawable/trans_black_stroke">
 
             <TextView
                 android:id="@+id/spokenText"
