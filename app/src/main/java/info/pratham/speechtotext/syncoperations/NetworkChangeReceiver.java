@@ -17,7 +17,7 @@ public class NetworkChangeReceiver extends BroadcastReceiver{
     public void onReceive(final Context context, final Intent intent) {
 
         String status = NetworkUtil.getConnectivityStatusString(context);
-        //Toast.makeText(context, "Status : "+status, Toast.LENGTH_LONG).show();
+        //Toast.makeText(context, "Syncing Data: "+status, Toast.LENGTH_SHORT).show();
         if(NetworkUtil.getConnectivityStatus(context) != 0) {
             FormActivity.SyncProcess syncProcess = new FormActivity.SyncProcess(context);
             syncProcess.createJsonforTransfer();

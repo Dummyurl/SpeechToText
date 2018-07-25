@@ -4,25 +4,6 @@
             "outputFile": "G:\\GIT_STT\\SpeechToText\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Ameya\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\4ad754477f96395c6a211a86af40b411\\res\\values-v14\\values-v14.xml",
-                    "from": {
-                        "startLines": "2,7,8,9,15",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "55,331,402,485,895",
-                        "endLines": "6,7,8,14,20",
-                        "endColumns": "12,70,82,12,12",
-                        "endOffsets": "326,397,480,890,1312"
-                    },
-                    "to": {
-                        "startLines": "4,9,10,11,17",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "165,441,512,595,1005",
-                        "endLines": "8,9,10,16,22",
-                        "endColumns": "12,70,82,12,12",
-                        "endOffsets": "436,507,590,1000,1422"
-                    }
-                },
-                {
                     "source": "G:\\GIT_STT\\SpeechToText\\app\\src\\main\\res\\values-v14\\strings.xml",
                     "from": {
                         "startLines": "2,3",

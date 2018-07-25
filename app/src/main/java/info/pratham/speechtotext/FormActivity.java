@@ -19,6 +19,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.Toast;
 
 import org.json.JSONArray;
@@ -53,14 +54,16 @@ import static info.pratham.speechtotext.syncoperations.NetworkUtil.getConnectivi
 public class FormActivity extends AppCompatActivity {
 
     public Button btnSubmit, btnSync;
-    public EditText et_name, et_age, et_location, et_education, et_phno;
+    public EditText et_name, et_location;
     DBHelper dbHelper;
-    String uName, uAge, uLocation, uEducation, uPhno;
+    RadioButton rb_Adult,rb_Child;
+    String uName, uAge, uLocation;
     static String deviceId;
     String internalStorgePath, strData;
     public static final int RequestPermissionCode = 1;
     static JSONArray readingData;
-    static boolean syncFlg = false;
+    static boolean syncFlg = false,syncPressed=false;
+    static Context staticContex;
 
     NetworkChangeReceiver networkChangeReceiver;
     //public static ProgressDialog progress;
@@ -77,14 +80,14 @@ public class FormActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form);
         readingData = getJsonData();
+        staticContex = FormActivity.this;
         dbHelper = new DBHelper(this);
         btnSubmit = (Button) findViewById(R.id.btnSubmit);
         btnSync = (Button) findViewById(R.id.btnSync);
         et_name = (EditText) findViewById(R.id.etName);
-        et_age = (EditText) findViewById(R.id.etAge);
         et_location = (EditText) findViewById(R.id.etPlace);
-        et_education = (EditText) findViewById(R.id.etEdu);
-        et_phno = (EditText) findViewById(R.id.etPhoneNo);
+        rb_Adult = (RadioButton) findViewById(R.id.rb_adult);
+        rb_Child = (RadioButton) findViewById(R.id.rb_child);
 
         deviceId = Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
 
@@ -110,12 +113,13 @@ public class FormActivity extends AppCompatActivity {
                 /*uName = "Goku";*/
 
                 uName = String.valueOf(et_name.getText());
-                uAge = String.valueOf(et_age.getText());
                 uLocation = String.valueOf(et_location.getText());
-                uEducation = String.valueOf(et_education.getText());
-                uPhno = String.valueOf(et_phno.getText());
+                if (rb_Adult.isChecked())
+                    uAge="Adult";
+                else
+                    uAge="Child";
 
-                if (!uName.equalsIgnoreCase("") && !uAge.equalsIgnoreCase("") && !uLocation.equalsIgnoreCase("") && !uEducation.equalsIgnoreCase("") && uPhno.length()==10) {
+                if (!uName.equalsIgnoreCase("") && !uLocation.equalsIgnoreCase("") ) {
 
                     MyUser user = new MyUser();
                     MyDBHelper myDBHelper = new MyDBHelper(FormActivity.this);
@@ -126,18 +130,15 @@ public class FormActivity extends AppCompatActivity {
                     user.Name = uName;
                     user.Age = uAge;
                     user.Location = uLocation;
-                    user.Education = uEducation;
-                    user.Phone = uPhno;
+                    user.Education = "NA";
+                    user.Phone = "NA";
                     user.Date = "" + getCurrentDateTime();
 
                     myDBHelper.AddUser(user);
                     BackupDatabase.backup(FormActivity.this);
 
                     et_name.setText("");
-                    et_age.setText("");
                     et_location.setText("");
-                    et_education.setText("");
-                    et_phno.setText("");
 
                     Intent intent;
                     intent = new Intent(FormActivity.this, MainActivity.class);
@@ -157,7 +158,6 @@ public class FormActivity extends AppCompatActivity {
         btnSync.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 int res = getConnectivityStatus(FormActivity.this);
                 if(res == 0 )
                     showDialog();
@@ -574,6 +574,9 @@ public class FormActivity extends AppCompatActivity {
                     //progress.dismiss();
                     deleteDBEntries();
                 }
+                if(syncPressed)
+                Toast.makeText(staticContex, "SyncComplete", Toast.LENGTH_SHORT).show();
+
             }
 
 

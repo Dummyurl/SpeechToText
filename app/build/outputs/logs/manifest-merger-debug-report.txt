@@ -5,16 +5,17 @@ INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:2:1-59:12
 INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:2:1-59:12
 INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:2:1-59:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\6c7a2548d61557e67a9036b689250df5\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\4ad754477f96395c6a211a86af40b411\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\2800609a85278775244238dc6f74dba3\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\ebf132c2022f7bef85b6739e2c5a0c36\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\1689986ad20b320211f67f1ba4644110\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\d1356adbe2730913014a99e8cdd4c779\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\b745d607ff06b9d8e64545751ef53154\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\1f685bd8d1ebc59b45e31257a551eb75\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\104fb8947ee93a311a689557efae9169\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\125f3cd911e212a0325c5074d5cbd711\AndroidManifest.xml:17:1-31:12
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\0c1cd544f1e833c11d3911b4a0185b64\AndroidManifest.xml:17:1-30:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\f9c688f59c78dfa479c951ac2c7efe2e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\886d41102596d2de24824c2fa0938673\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\e71bf3d65c4aef4f32a9e95a32af660d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\146b21e97cd38847f5428ccf4d2cc080\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\eeece5399abe86679f7be9ac91cc691e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\21daba1e8520a12e26ddeffa1c16a506\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\b3084031579b15aa95a3fbe789431b98\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\11251b8829a5695df33c5efaf080becd\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\3eb6aa6cb24b39977023b3325521dc5d\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\3a9c77bdbed5f508832ab190c9324b45\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\73892371e28dbbaa35f1f8e751fc59d8\AndroidManifest.xml:17:1-22:12
 INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:2:1-59:12
 INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:2:1-59:12
 INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:2:1-59:12
@@ -38,30 +39,30 @@ INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:7:5-9:41
 INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\6c7a2548d61557e67a9036b689250df5\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\6c7a2548d61557e67a9036b689250df5\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\4ad754477f96395c6a211a86af40b411\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\4ad754477f96395c6a211a86af40b411\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\2800609a85278775244238dc6f74dba3\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\2800609a85278775244238dc6f74dba3\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\ebf132c2022f7bef85b6739e2c5a0c36\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\ebf132c2022f7bef85b6739e2c5a0c36\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\1689986ad20b320211f67f1ba4644110\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\1689986ad20b320211f67f1ba4644110\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\d1356adbe2730913014a99e8cdd4c779\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\d1356adbe2730913014a99e8cdd4c779\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\b745d607ff06b9d8e64545751ef53154\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\b745d607ff06b9d8e64545751ef53154\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\1f685bd8d1ebc59b45e31257a551eb75\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\1f685bd8d1ebc59b45e31257a551eb75\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\104fb8947ee93a311a689557efae9169\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\104fb8947ee93a311a689557efae9169\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\125f3cd911e212a0325c5074d5cbd711\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\125f3cd911e212a0325c5074d5cbd711\AndroidManifest.xml:21:5-23:58
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\0c1cd544f1e833c11d3911b4a0185b64\AndroidManifest.xml:20:5-22:41
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\0c1cd544f1e833c11d3911b4a0185b64\AndroidManifest.xml:20:5-22:41
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\f9c688f59c78dfa479c951ac2c7efe2e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\f9c688f59c78dfa479c951ac2c7efe2e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\886d41102596d2de24824c2fa0938673\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\886d41102596d2de24824c2fa0938673\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\e71bf3d65c4aef4f32a9e95a32af660d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\e71bf3d65c4aef4f32a9e95a32af660d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\146b21e97cd38847f5428ccf4d2cc080\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\146b21e97cd38847f5428ccf4d2cc080\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\eeece5399abe86679f7be9ac91cc691e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\eeece5399abe86679f7be9ac91cc691e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\21daba1e8520a12e26ddeffa1c16a506\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\21daba1e8520a12e26ddeffa1c16a506\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\b3084031579b15aa95a3fbe789431b98\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\b3084031579b15aa95a3fbe789431b98\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\11251b8829a5695df33c5efaf080becd\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\11251b8829a5695df33c5efaf080becd\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\3eb6aa6cb24b39977023b3325521dc5d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\3eb6aa6cb24b39977023b3325521dc5d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\3a9c77bdbed5f508832ab190c9324b45\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\3a9c77bdbed5f508832ab190c9324b45\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\73892371e28dbbaa35f1f8e751fc59d8\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\73892371e28dbbaa35f1f8e751fc59d8\AndroidManifest.xml:20:5-44
 INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:7:5-9:41
 INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:7:5-9:41
-	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\4ad754477f96395c6a211a86af40b411\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:9:9-38
 		INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml
@@ -118,26 +119,6 @@ application
 ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:23:5-57:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\6c7a2548d61557e67a9036b689250df5\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\6c7a2548d61557e67a9036b689250df5\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\4ad754477f96395c6a211a86af40b411\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\4ad754477f96395c6a211a86af40b411\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\2800609a85278775244238dc6f74dba3\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\2800609a85278775244238dc6f74dba3\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\ebf132c2022f7bef85b6739e2c5a0c36\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\ebf132c2022f7bef85b6739e2c5a0c36\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\1689986ad20b320211f67f1ba4644110\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\1689986ad20b320211f67f1ba4644110\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\d1356adbe2730913014a99e8cdd4c779\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\d1356adbe2730913014a99e8cdd4c779\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\b745d607ff06b9d8e64545751ef53154\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\b745d607ff06b9d8e64545751ef53154\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\1f685bd8d1ebc59b45e31257a551eb75\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\1f685bd8d1ebc59b45e31257a551eb75\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\104fb8947ee93a311a689557efae9169\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\104fb8947ee93a311a689557efae9169\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\125f3cd911e212a0325c5074d5cbd711\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\125f3cd911e212a0325c5074d5cbd711\AndroidManifest.xml:25:5-29:19
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\0c1cd544f1e833c11d3911b4a0185b64\AndroidManifest.xml:24:5-28:19
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\0c1cd544f1e833c11d3911b4a0185b64\AndroidManifest.xml:24:5-28:19
 	android:label
 		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:26:9-41
 	android:protectionLevel
@@ -194,31 +175,3 @@ action#android.net.wifi.WIFI_STATE_CHANGED
 ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:53:17-78
 	android:name
 		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:53:25-75
-meta-data#android.support.VERSION
-ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\4ad754477f96395c6a211a86af40b411\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\2800609a85278775244238dc6f74dba3\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\2800609a85278775244238dc6f74dba3\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\ebf132c2022f7bef85b6739e2c5a0c36\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\ebf132c2022f7bef85b6739e2c5a0c36\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\1689986ad20b320211f67f1ba4644110\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\1689986ad20b320211f67f1ba4644110\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\d1356adbe2730913014a99e8cdd4c779\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\d1356adbe2730913014a99e8cdd4c779\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\b745d607ff06b9d8e64545751ef53154\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\b745d607ff06b9d8e64545751ef53154\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\1f685bd8d1ebc59b45e31257a551eb75\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\1f685bd8d1ebc59b45e31257a551eb75\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\104fb8947ee93a311a689557efae9169\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\104fb8947ee93a311a689557efae9169\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\125f3cd911e212a0325c5074d5cbd711\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\125f3cd911e212a0325c5074d5cbd711\AndroidManifest.xml:26:9-28:38
-	android:value
-		ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\4ad754477f96395c6a211a86af40b411\AndroidManifest.xml:28:13-35
-	android:name
-		ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\4ad754477f96395c6a211a86af40b411\AndroidManifest.xml:27:13-51
-meta-data#android.arch.lifecycle.VERSION
-ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\0c1cd544f1e833c11d3911b4a0185b64\AndroidManifest.xml:25:9-27:47
-	android:value
-		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\0c1cd544f1e833c11d3911b4a0185b64\AndroidManifest.xml:27:13-44
-	android:name
-		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\0c1cd544f1e833c11d3911b4a0185b64\AndroidManifest.xml:26:13-58
