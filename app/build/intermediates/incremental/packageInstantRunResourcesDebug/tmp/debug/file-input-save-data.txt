@@ -1,7 +1,0 @@
-#Internal package file, do not edit.
-#Wed Jul 25 12:42:23 IST 2018
-0.baseType=DIRECTORY
-0.base=G\:\\GIT_STT\\SpeechToText\\app\\build\\intermediates\\assets\\debug
-0.path=LanguageData.json
-0.set=ASSET
-count=1

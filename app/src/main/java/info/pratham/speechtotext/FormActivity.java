@@ -2,8 +2,6 @@ package info.pratham.speechtotext;
 
 import android.annotation.SuppressLint;
 import android.app.Dialog;
-import android.app.ProgressDialog;
-import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
@@ -41,12 +39,12 @@ import java.util.Calendar;
 import java.util.List;
 import java.util.Locale;
 import java.util.UUID;
-import java.util.concurrent.ExecutionException;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
 import info.pratham.speechtotext.syncoperations.NetworkChangeReceiver;
 import info.pratham.speechtotext.syncoperations.SyncUtility;
+import info.pratham.speechtotext.writing_game.SelectGame;
 
 import static info.pratham.speechtotext.syncoperations.NetworkUtil.getConnectivityStatus;
 
@@ -141,9 +139,13 @@ public class FormActivity extends AppCompatActivity {
                     et_location.setText("");
 
                     Intent intent;
-                    intent = new Intent(FormActivity.this, MainActivity.class);
+                    intent = new Intent(FormActivity.this, SelectGame.class);
                     intent.putExtra("uId", studentId);
                     startActivity(intent);
+                   /* Intent intent;
+                    intent = new Intent(FormActivity.this, MainActivity.class);
+                    intent.putExtra("uId", studentId);
+                    startActivity(intent);*/
                 } else {
                     Toast.makeText(FormActivity.this, "Please fill all fields", Toast.LENGTH_SHORT).show();
                 }

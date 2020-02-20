@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Android_Projects\\GIT_STT\\SpeechToText\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ko\\values-ko.xml",
+            "outputFile": "E:\\github\\foundationApp\\SpeechToText\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ko\\values-ko.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Pratham PC3\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\722fc4e8d42bc54ad2a5233c15718dd3\\res\\values-ko\\values-ko.xml",
+                    "source": "C:\\Users\\PEF\\.gradle\\caches\\transforms-2\\files-2.1\\ea872c65732a359622078aba563ccc53\\res\\values-ko\\values-ko.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Pratham PC3\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\297f4664f19239eafbcc18b23b65e4e7\\res\\values-ko\\values-ko.xml",
+                    "source": "C:\\Users\\PEF\\.gradle\\caches\\transforms-2\\files-2.1\\11450cdb6f42c671f6020c44a9d459b6\\res\\values-ko\\values-ko.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
