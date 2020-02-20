@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "G:\\GIT_STT\\SpeechToText\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lt\\values-lt.xml",
+            "outputFile": "E:\\Android_Projects\\GIT_STT\\SpeechToText\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lt\\values-lt.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Ameya\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\b3084031579b15aa95a3fbe789431b98\\res\\values-lt\\values-lt.xml",
+                    "source": "C:\\Users\\Pratham PC3\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\297f4664f19239eafbcc18b23b65e4e7\\res\\values-lt\\values-lt.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Ameya\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\f9c688f59c78dfa479c951ac2c7efe2e\\res\\values-lt\\values-lt.xml",
+                    "source": "C:\\Users\\Pratham PC3\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\722fc4e8d42bc54ad2a5233c15718dd3\\res\\values-lt\\values-lt.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

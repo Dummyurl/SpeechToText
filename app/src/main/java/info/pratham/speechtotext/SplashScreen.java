@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 
 import static info.pratham.speechtotext.syncoperations.NetworkUtil.getConnectivityStatus;
@@ -23,7 +24,10 @@ public class SplashScreen extends ActivityManagePermission implements Permission
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
-        getSupportActionBar().hide();
+        getWindow().setFlags(
+                WindowManager.LayoutParams.FLAG_HARDWARE_ACCELERATED,
+                WindowManager.LayoutParams.FLAG_HARDWARE_ACCELERATED);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         handler = new Handler();
 
         btn_start = (Button) findViewById(R.id.btn_start);

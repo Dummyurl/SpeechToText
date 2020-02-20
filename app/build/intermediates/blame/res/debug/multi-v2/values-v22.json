@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "G:\\GIT_STT\\SpeechToText\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v22\\values-v22.xml",
+            "outputFile": "E:\\Android_Projects\\GIT_STT\\SpeechToText\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v22\\values-v22.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Ameya\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\f9c688f59c78dfa479c951ac2c7efe2e\\res\\values-v22\\values-v22.xml",
+                    "source": "C:\\Users\\Pratham PC3\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\722fc4e8d42bc54ad2a5233c15718dd3\\res\\values-v22\\values-v22.xml",
                     "from": {
                         "startLines": "2,3,4,9",
                         "startColumns": "4,4,4,4",

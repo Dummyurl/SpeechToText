@@ -26,7 +26,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 import static info.pratham.speechtotext.FormActivity.getCurrentDateTime;
 
-public class MainActivity extends AppCompatActivity implements
+public class MainActivity extends BaseActivity implements
         RecognitionListener {
 
     private ImageButton btnSpeak, btnHearAnswer, btnNextSentence, btnHearQuestion;
@@ -50,7 +50,6 @@ public class MainActivity extends AppCompatActivity implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        getSupportActionBar().hide();
 
         uName = getIntent().getStringExtra("uName");
         uID = getIntent().getStringExtra("uId");
@@ -116,6 +115,13 @@ public class MainActivity extends AppCompatActivity implements
         languages.add("Kannada");
         languages.add("Tamil");
         languages.add("Telugu");
+        languages.add("English - Eritrea");
+        languages.add("English - Ghana");
+        languages.add("English - Kenya");
+        languages.add("English - Madagascar");
+        languages.add("English - Nigeria");
+        languages.add("English - Tanzania");
+        languages.add("English - Uganda");
 
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, languages);
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -127,13 +133,40 @@ public class MainActivity extends AppCompatActivity implements
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
                 languageSpinner = parent.getItemAtPosition(position).toString();
-
                 if (languageSpinner.equalsIgnoreCase("Hindi")) {
                     selectedLanguage = "hi-IN";
                     btnHearAnswer.setVisibility(View.VISIBLE);
                     btnHearQuestion.setVisibility(View.VISIBLE);
                 } else if (languageSpinner.equalsIgnoreCase("English")) {
                     selectedLanguage = "en-IN";
+                    btnHearAnswer.setVisibility(View.VISIBLE);
+                    btnHearQuestion.setVisibility(View.VISIBLE);
+                } else if (languageSpinner.equalsIgnoreCase("English - Eritrea")) {
+                    selectedLanguage = "en-ER";
+                    btnHearAnswer.setVisibility(View.VISIBLE);
+                    btnHearQuestion.setVisibility(View.VISIBLE);
+                } else if (languageSpinner.equalsIgnoreCase("English - Ghana")) {
+                    selectedLanguage = "en-GH";
+                    btnHearAnswer.setVisibility(View.VISIBLE);
+                    btnHearQuestion.setVisibility(View.VISIBLE);
+                } else if (languageSpinner.equalsIgnoreCase("English - Kenya")) {
+                    selectedLanguage = "en-KE";
+                    btnHearAnswer.setVisibility(View.VISIBLE);
+                    btnHearQuestion.setVisibility(View.VISIBLE);
+                } else if (languageSpinner.equalsIgnoreCase("English - Madagascar")) {
+                    selectedLanguage = "en-MG";
+                    btnHearAnswer.setVisibility(View.VISIBLE);
+                    btnHearQuestion.setVisibility(View.VISIBLE);
+                } else if (languageSpinner.equalsIgnoreCase("English - Nigeria")) {
+                    selectedLanguage = "en-NG";
+                    btnHearAnswer.setVisibility(View.VISIBLE);
+                    btnHearQuestion.setVisibility(View.VISIBLE);
+                } else if (languageSpinner.equalsIgnoreCase("English - Tanzania")) {
+                    selectedLanguage = "en-TZ";
+                    btnHearAnswer.setVisibility(View.VISIBLE);
+                    btnHearQuestion.setVisibility(View.VISIBLE);
+                } else if (languageSpinner.equalsIgnoreCase("English - Uganda")) {
+                    selectedLanguage = "en-UG";
                     btnHearAnswer.setVisibility(View.VISIBLE);
                     btnHearQuestion.setVisibility(View.VISIBLE);
                 } else if (languageSpinner.equalsIgnoreCase("Marathi")) {

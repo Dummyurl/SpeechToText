@@ -1,7 +1,4 @@
-#Wed Jul 25 12:43:00 IST 2018
-base.0=G\:\\GIT_STT\\SpeechToText\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
-path.1=classes.dex
-renamed.1=classes2.dex
+#Wed Feb 19 11:57:36 IST 2020
+base.0=E\:\\Android_Projects\\GIT_STT\\SpeechToText\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=G\:\\GIT_STT\\SpeechToText\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12

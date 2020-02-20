@@ -1,177 +1,177 @@
 -- Merging decision tree log ---
 manifest
-ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:2:1-59:12
-INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:2:1-59:12
-INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:2:1-59:12
-INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:2:1-59:12
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\6c7a2548d61557e67a9036b689250df5\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\f9c688f59c78dfa479c951ac2c7efe2e\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\886d41102596d2de24824c2fa0938673\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\e71bf3d65c4aef4f32a9e95a32af660d\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\146b21e97cd38847f5428ccf4d2cc080\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\eeece5399abe86679f7be9ac91cc691e\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\21daba1e8520a12e26ddeffa1c16a506\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\b3084031579b15aa95a3fbe789431b98\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\11251b8829a5695df33c5efaf080becd\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\3eb6aa6cb24b39977023b3325521dc5d\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\3a9c77bdbed5f508832ab190c9324b45\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\73892371e28dbbaa35f1f8e751fc59d8\AndroidManifest.xml:17:1-22:12
-INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:2:1-59:12
-INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:2:1-59:12
-INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:2:1-59:12
+ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:2:1-59:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Pratham PC3\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\3cbbf80af7c7b5e64669e7303e8d89ec\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Pratham PC3\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\722fc4e8d42bc54ad2a5233c15718dd3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Pratham PC3\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\72c1c28bb029a8d1a3a2536764ee5648\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Pratham PC3\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\19869b4db545247e13040bc1452a5295\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Pratham PC3\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\12fcffa680451295c3a773a3374b3f41\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Pratham PC3\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\73d14ebb9490b4e3e1f2839d9d21abb6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Pratham PC3\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\b397ec2ed743dfd01ba686ab26ae5d51\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Pratham PC3\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\297f4664f19239eafbcc18b23b65e4e7\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Pratham PC3\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\e38cd0c9b2b8d6c911b8169137df3668\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Pratham PC3\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\4922998651fdf637922ad040c8c5ddcc\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Pratham PC3\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\9ab9abe62534e5ebb54295c11903bd61\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Pratham PC3\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\01acd847f963278a3a7ae2d1afd2e7f6\AndroidManifest.xml:17:1-22:12
+INJECTED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:2:1-59:12
 	package
-		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:3:5-40
-		INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml
-		INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml
+		ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:3:5-40
+		INJECTED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:5:5-30
-		INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml
-		INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml
+		ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:4:5-28
-		INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml
-		INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml
+		ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml
 uses-sdk
-ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:7:5-9:41
-INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:7:5-9:41
-INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\6c7a2548d61557e67a9036b689250df5\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\6c7a2548d61557e67a9036b689250df5\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\f9c688f59c78dfa479c951ac2c7efe2e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\f9c688f59c78dfa479c951ac2c7efe2e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\886d41102596d2de24824c2fa0938673\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\886d41102596d2de24824c2fa0938673\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\e71bf3d65c4aef4f32a9e95a32af660d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\e71bf3d65c4aef4f32a9e95a32af660d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\146b21e97cd38847f5428ccf4d2cc080\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\146b21e97cd38847f5428ccf4d2cc080\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\eeece5399abe86679f7be9ac91cc691e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\eeece5399abe86679f7be9ac91cc691e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\21daba1e8520a12e26ddeffa1c16a506\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\21daba1e8520a12e26ddeffa1c16a506\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\b3084031579b15aa95a3fbe789431b98\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\b3084031579b15aa95a3fbe789431b98\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\11251b8829a5695df33c5efaf080becd\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\11251b8829a5695df33c5efaf080becd\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\3eb6aa6cb24b39977023b3325521dc5d\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\3eb6aa6cb24b39977023b3325521dc5d\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\3a9c77bdbed5f508832ab190c9324b45\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\3a9c77bdbed5f508832ab190c9324b45\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\73892371e28dbbaa35f1f8e751fc59d8\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\73892371e28dbbaa35f1f8e751fc59d8\AndroidManifest.xml:20:5-44
-INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:7:5-9:41
-INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:7:5-9:41
+ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Pratham PC3\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\3cbbf80af7c7b5e64669e7303e8d89ec\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Pratham PC3\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\3cbbf80af7c7b5e64669e7303e8d89ec\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Pratham PC3\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\722fc4e8d42bc54ad2a5233c15718dd3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Pratham PC3\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\722fc4e8d42bc54ad2a5233c15718dd3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Pratham PC3\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\72c1c28bb029a8d1a3a2536764ee5648\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Pratham PC3\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\72c1c28bb029a8d1a3a2536764ee5648\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Pratham PC3\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\19869b4db545247e13040bc1452a5295\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Pratham PC3\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\19869b4db545247e13040bc1452a5295\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Pratham PC3\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\12fcffa680451295c3a773a3374b3f41\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Pratham PC3\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\12fcffa680451295c3a773a3374b3f41\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Pratham PC3\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\73d14ebb9490b4e3e1f2839d9d21abb6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Pratham PC3\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\73d14ebb9490b4e3e1f2839d9d21abb6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Pratham PC3\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\b397ec2ed743dfd01ba686ab26ae5d51\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Pratham PC3\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\b397ec2ed743dfd01ba686ab26ae5d51\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Pratham PC3\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\297f4664f19239eafbcc18b23b65e4e7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Pratham PC3\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\297f4664f19239eafbcc18b23b65e4e7\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Pratham PC3\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\e38cd0c9b2b8d6c911b8169137df3668\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Pratham PC3\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\e38cd0c9b2b8d6c911b8169137df3668\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Pratham PC3\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\4922998651fdf637922ad040c8c5ddcc\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Pratham PC3\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\4922998651fdf637922ad040c8c5ddcc\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Pratham PC3\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\9ab9abe62534e5ebb54295c11903bd61\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Pratham PC3\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\9ab9abe62534e5ebb54295c11903bd61\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Pratham PC3\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\01acd847f963278a3a7ae2d1afd2e7f6\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Pratham PC3\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\01acd847f963278a3a7ae2d1afd2e7f6\AndroidManifest.xml:20:5-44
+INJECTED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:7:5-9:41
 	android:targetSdkVersion
-		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:9:9-38
-		INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml
-		INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml
+		ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:9:9-38
+		INJECTED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:8:9-35
-		INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml
-		INJECTED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml
+		ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:8:9-35
+		INJECTED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:11:5-79
+ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:11:5-79
 	android:name
-		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:11:22-76
+		ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:11:22-76
 uses-permission#android.permission.WRITE_INTERNAL_STORAGE
-ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:12:5-81
+ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:12:5-81
 	android:name
-		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:12:22-78
+		ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:12:22-78
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:13:5-81
+ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:13:5-81
 	android:name
-		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:13:22-78
+		ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:13:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:14:5-80
+ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:14:5-80
 	android:name
-		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:14:22-77
+		ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:14:22-77
 uses-permission#android.permission.ACCESS_EXTERNAL_STORAGE
-ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:15:5-82
+ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:15:5-82
 	android:name
-		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:15:22-79
+		ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:15:22-79
 uses-permission#android.permission.READ_INTERNAL_STORAGE
-ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:16:5-80
+ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:16:5-80
 	android:name
-		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:16:22-77
+		ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:16:22-77
 uses-permission#android.permission.ACCESS_INTERNAL_STORAGE
-ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:17:5-82
+ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:17:5-82
 	android:name
-		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:17:22-79
+		ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:17:22-79
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:18:5-71
+ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:18:5-71
 	android:name
-		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:18:22-68
+		ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:18:22-68
 uses-permission#android.permission.INTERNET
-ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:19:5-67
+ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:19:5-67
 	android:name
-		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:19:22-64
+		ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:19:22-64
 uses-permission#android.permission.STORAGE
-ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:20:5-66
+ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:20:5-66
 	android:name
-		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:20:22-63
+		ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:20:22-63
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:21:5-75
+ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:21:5-75
 	android:name
-		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:21:22-72
+		ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:21:22-72
 application
-ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:23:5-57:19
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\6c7a2548d61557e67a9036b689250df5\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Ameya\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\6c7a2548d61557e67a9036b689250df5\AndroidManifest.xml:9:5-20
+ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:23:5-57:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Pratham PC3\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\3cbbf80af7c7b5e64669e7303e8d89ec\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Pratham PC3\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\3cbbf80af7c7b5e64669e7303e8d89ec\AndroidManifest.xml:9:5-20
 	android:label
-		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:26:9-41
+		ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:26:9-41
 	android:protectionLevel
-		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:27:9-41
+		ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:27:9-41
 	android:icon
-		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:25:9-43
+		ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:25:9-43
 	android:allowBackup
-		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:24:9-35
+		ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:24:9-35
 	android:theme
-		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:28:9-40
+		ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:28:9-52
 activity#info.pratham.speechtotext.SplashScreen
-ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:29:9-38:20
+ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:29:9-38:20
 	android:screenOrientation
-		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:32:13-49
+		ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:32:13-49
 	android:label
-		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:31:13-45
+		ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:31:13-45
 	android:name
-		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:30:13-41
+		ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:30:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:33:13-37:29
+ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:33:13-37:29
 action#android.intent.action.MAIN
-ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:34:17-69
+ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:34:17-69
 	android:name
-		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:34:25-66
+		ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:34:25-66
 category#android.intent.category.LAUNCHER
-ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:36:17-77
+ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:36:17-77
 	android:name
-		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:36:27-74
+		ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:36:27-74
 activity#info.pratham.speechtotext.MainActivity
-ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:40:9-42:52
+ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:40:9-42:52
 	android:screenOrientation
-		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:42:13-49
+		ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:42:13-49
 	android:name
-		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:41:13-41
+		ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:41:13-41
 activity#info.pratham.speechtotext.FormActivity
-ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:44:9-46:51
+ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:44:9-46:51
 	android:screenOrientation
-		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:46:13-49
+		ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:46:13-49
 	android:name
-		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:45:13-41
+		ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:45:13-41
 receiver#info.pratham.speechtotext.syncoperations.NetworkChangeReceiver
-ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:48:9-55:20
+ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:48:9-55:20
 	android:label
-		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:50:13-50
+		ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:50:13-50
 	android:name
-		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:49:13-90
+		ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:49:13-90
 intent-filter#action:name:android.net.conn.CONNECTIVITY_CHANGE+action:name:android.net.wifi.WIFI_STATE_CHANGED
-ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:51:13-54:29
+ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:51:13-54:29
 action#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:52:17-79
+ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:52:17-79
 	android:name
-		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:52:25-76
+		ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:52:25-76
 action#android.net.wifi.WIFI_STATE_CHANGED
-ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:53:17-78
+ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:53:17-78
 	android:name
-		ADDED from G:\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:53:25-75
+		ADDED from E:\Android_Projects\GIT_STT\SpeechToText\app\src\main\AndroidManifest.xml:53:25-75
