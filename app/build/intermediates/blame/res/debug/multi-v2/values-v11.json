@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Android_Projects\\GIT_STT\\SpeechToText\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
+            "outputFile": "E:\\github\\foundationApp\\SpeechToText\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
             "map": [
                 {
-                    "source": "E:\\Android_Projects\\GIT_STT\\SpeechToText\\app\\src\\main\\res\\values-v11\\strings.xml",
+                    "source": "E:\\github\\foundationApp\\SpeechToText\\app\\src\\main\\res\\values-v11\\strings.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

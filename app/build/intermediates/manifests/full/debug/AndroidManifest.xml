@@ -26,10 +26,12 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:protectionLevel="normal"
+        android:testOnly="true"
         android:theme="@style/AppTheme.NoActionBar" >
-        <activity android:name="info.pratham.speechtotext.writing_game.WritingActivity" />
+        <activity
+            android:name="info.pratham.speechtotext.writing_game.WritingActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity android:name="info.pratham.speechtotext.writing_game.SelectGame" />
-        <activity android:name="info.pratham.speechtotext.BaseActivity" />
         <activity
             android:name="info.pratham.speechtotext.SplashScreen"
             android:label="@string/app_name"

@@ -26,9 +26,10 @@
         android:label="@string/app_name"
         android:protectionLevel="normal"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".writing_game.WritingActivity"></activity>
+        <activity
+            android:name=".writing_game.WritingActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity android:name=".writing_game.SelectGame" />
-        <activity android:name=".BaseActivity" />
         <activity
             android:name=".SplashScreen"
             android:label="@string/app_name"
