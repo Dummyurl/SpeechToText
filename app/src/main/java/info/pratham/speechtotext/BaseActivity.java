@@ -27,11 +27,11 @@ public class BaseActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_HARDWARE_ACCELERATED);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-//        hideSystemUI();
         super.onCreate(savedInstanceState);
         mDecorView = getWindow().getDecorView();
         muteFlg = false;
-//        Catcho.Builder(this)
+
+        //        Catcho.Builder(this)
 //                .activity(CatchoTransparentActivity.class).build();
              //   .recipients("abc@domain.com").build();
     }
@@ -64,7 +64,6 @@ public class BaseActivity extends AppCompatActivity {
                         | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
         );
     }
-
 
     public static void setMute(int m) {
         if ((Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)) {
